@@ -1,0 +1,339 @@
+
+/* ik heb met mediaquery verschillende padding waardes
+gegeven omdat het dan beter meeschaald op mobiel */
+html {
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  html { font-size: 13px; 
+  }
+
+ }
+
+ @media screen and (max-width: 1100px){
+    #top{
+        padding-left:50%;
+        padding-right: 50%;
+    }
+}
+
+ 
+
+
+
+
+
+
+/*dit zijn mijn geimporteerde font-types van roboto */
+@font-face {
+	font-family: Roboto light;
+	src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: Roboto light;
+	src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+	
+
+header  {
+	
+	text-align:center;
+	display: inline;
+    background-color: #675C53;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+    z-index: 1;
+	
+
+}
+
+#intro {
+	
+	margin-top: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2em;
+	
+	
+}
+
+#intro p {
+	color: #E5711E;
+
+}
+
+body {
+	margin: 0 auto;
+    font-family: Roboto, sans serif;
+	padding-top: 1.25em;
+	
+}
+
+h {
+	font-weight: regular;
+
+}
+
+
+
+ 
+
+header>button{
+	text-decoration: none;
+
+}
+
+header ul  {
+	list-style: none;
+	display:flex;
+    background-color: #675C53;
+
+
+}
+
+header li {
+    display: inline;
+    padding: 0 2em 0 0;
+    text-align: center;
+}
+
+
+
+header ul img {
+	display: inline;
+	text-align:center;
+	height: 1.75em;
+}
+
+header a {
+	display:inline;
+	height:3.75em;
+}
+
+.uovlogo{ 
+	float:left; 
+}
+
+/*button.search{
+	text-align: right;
+	border-style:none;
+	background-color: transparent;
+} */
+
+
+
+
+
+#zoekknop {
+	color: white;
+	
+	font-weight: bold;
+	border-style: none none solid none;
+	border-bottom-color:white;
+	border-bottom-height: 1px;
+	background-color:transparent;
+	border-top-style: none;
+	
+
+
+	
+}
+
+#zoekknop:focus {
+	border-bottom-color: #E5711E;
+}
+
+#search_submit  {
+  
+    float: left;
+    background-repeat:no-repeat;
+    border-style:none;
+    padding-right: 2em;
+    height: 1.75em;
+    background-image: url('searchicoon.png') center center no-repeat;
+ 
+
+
+}
+
+button>img {
+	height: 1.75rem;
+}
+
+
+
+#tweedeMenu{
+	padding-top: 100px;
+	
+
+
+}
+
+/* font-weight: bold;
+ color:white;
+ font-size: 1rem;
+
+
+ position: fixed;
+ background-color: #C05D00;
+ margin-top: 7em;
+ padding-top:  3.3125em;
+ padding-left: 1.875em;
+ padding-right: 1.875em;
+ padding-bottom: 3.3125em;
+ border-radius: 6.25em;
+ 
+ border-style:none;
+
+ right: 0; 
+ top: 11em;
+
+ box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+} 
+
+#tweedeMenu button:hover {
+	background-color: #E5711E;
+}
+
+#tweedeMenu button:focus{
+	background-color: #D6CEC6;
+
+} */
+
+#tweedeMenu a {
+	
+	font-size: .73em;
+	font-weight: bold;
+	margin-left: 1em;
+	margin-bottom: 1em;
+    float: right;
+    display:inline;
+	text-decoration:none;
+	color: white;
+	background-color:#C05D00;
+	border-radius: 10px;
+	padding: 9px 15px;
+
+	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+	
+}
+
+#tweedeMenu a:hover {
+	background-color:#E5711E;
+}
+
+
+
+
+
+
+#tweedeMenu ul {
+	
+	list-style:none;
+	
+
+	
+	
+}
+
+
+/* om een of andere reden pakt de achtergrondkleur
+van #sectie1 hem niet en moet ik het delcaren in de algemene section tag...*/
+section {
+    background-color:#D6CEC6;
+	margin: 0 auto;
+	font-size: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+   -webkit-columns:  1;
+   -moz-columns:  1;
+        columns:  1;
+
+}
+
+section img {
+	height: auto ;
+	opacity: 0.8;
+	text-align: center; 
+	padding-bottom: 1em;
+	border-radius: 30px;
+    width: 90%;
+
+	
+	
+
+}
+
+section img:hover {
+	opacity: 1;
+
+
+}
+	
+table  {
+	max-width: 800px;
+}
+}
+
+#sectie1 {
+
+	
+	padding-top: 1.5em;
+	padding bottom:1px;
+	background-color: yellow;
+
+
+}
+
+#sectie2{
+
+	background-color: #FCD900 ;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+footer {
+	background-color:#675C53;
+	padding-top:2.5em;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2.5em;
+	color:white;
+}
+
+footer img {
+	height: 1.75em;
+
+
+}
+
+footer ul {
+	margin-top: 1em;
+	list-style-type:none;
+	margin-bottom: 4em;
+	text-align: left;
+}
+
+footer a{
+	display:block;
+	text-decoration: none;
+	color:white;
+
+
+}
+
+footer img.social {
+	float: right;
+	padding-left: 1em;
+}
+
+
+
+
+
