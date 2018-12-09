@@ -2,20 +2,118 @@
 /* ik heb met mediaquery verschillende padding waardes
 gegeven omdat het dan beter meeschaald op mobiel */
 html {
-  font-size: 18px;
-}
-@media (max-width: 900px) {
-  html { font-size: 13px; 
-  }
+  font-size: .8em;
+  line-height: 1.15;
 
- }
-
- @media screen and (max-width: 1100px){
-    #top{
-        padding-left:50%;
-        padding-right: 50%;
-    }
 }
+
+/*tablet formaat schermbreedte */
+@media only screen and (min-width:768px){
+
+
+
+header {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+#intro {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
+}
+
+section {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
+	
+}
+
+#sectie1 h1{
+	padding-top:1.875em;
+	
+}
+
+#sectie1 {
+	padding-bottom:1.875em;
+}
+
+#sectie2 {
+	padding-bottom:1.875em;
+}
+
+#sectie2 h1 {
+	padding-top: 1.875em;
+}
+
+article {
+	margin-top: 1.5625em;
+}
+
+footer {
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+
+
+}
+
+
+@media only screen and (min-width:980px){
+	
+html {
+	font-size: 1em;
+}
+	header{
+		padding-left:9.375em;
+		padding-right:9.375em;
+	}
+
+#tweedemenu {
+	padding-left:9.375em ;
+	text-align: left;	
+
+}
+
+#tweedemenu ul {
+	text-align: left;
+
+}
+#intro {
+	padding-left: 9.375em;
+	padding-right:9.375em;
+	padding-top:3.125em;
+	padding-bottom:3.125em;
+}
+
+section {
+	padding-left:9.375em;
+	padding-right:9.375em;
+	padding-top:3.125em;
+	padding-bottom:1.875em;
+
+	
+}
+
+article {
+	margin-bottom: 3.125em;
+	column-count: 3;
+	column-width: 233px;
+
+}
+
+footer {
+	padding-left: 9.375em;
+	padding-right: 9.375em;
+}
+
+	
+
+}
+  
+
 
  
 
@@ -31,7 +129,7 @@ html {
 }
 
 @font-face {
-	font-family: Roboto light;
+	font-family: Roboto bold;
 	src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
 	
@@ -39,23 +137,33 @@ html {
 header  {
 	
 	text-align:center;
-	display: inline;
+	display:flex;
+	justify-content: space-between;
     background-color: #675C53;
 	position: fixed;
 	width: 100%;
+	padding: 0.625em 1em;
 	top: 0;
 	left: 0;
 	right: 0;
-    z-index: 1;
+    z-index: 5;
+
+
 	
 
 }
 
+header img {
+	height: 25px;
+	
+	
+}
+
 #intro {
 	
-	margin-top: 100px;
-	padding-left: 10%;
-	padding-right: 10%;
+	margin-top: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 	padding-bottom: 2em;
 	
 	
@@ -66,15 +174,23 @@ header  {
 
 }
 
+/*html,body {
+    margin:0;
+    padding:0;
+}*/
+
 body {
 	margin: 0 auto;
     font-family: Roboto, sans serif;
 	padding-top: 1.25em;
 	
+
+	
 }
 
+
 h {
-	font-weight: regular;
+	font-weight: bold;
 
 }
 
@@ -87,36 +203,11 @@ header>button{
 
 }
 
-header ul  {
-	list-style: none;
-	display:flex;
-    background-color: #675C53;
-
-
-}
-
-header li {
-    display: inline;
-    padding: 0 2em 0 0;
-    text-align: center;
-}
 
 
 
-header ul img {
-	display: inline;
-	text-align:center;
-	height: 1.75em;
-}
 
-header a {
-	display:inline;
-	height:3.75em;
-}
 
-.uovlogo{ 
-	float:left; 
-}
 
 /*button.search{
 	text-align: right;
@@ -134,7 +225,7 @@ header a {
 	font-weight: bold;
 	border-style: none none solid none;
 	border-bottom-color:white;
-	border-bottom-height: 1px;
+	
 	background-color:transparent;
 	border-top-style: none;
 	
@@ -165,75 +256,50 @@ button>img {
 }
 
 
-
-#tweedeMenu{
-	padding-top: 100px;
-	
-
-
+#tweedemenu {
+	padding-bottom: 1em;
 }
 
-/* font-weight: bold;
- color:white;
- font-size: 1rem;
 
 
- position: fixed;
- background-color: #C05D00;
- margin-top: 7em;
- padding-top:  3.3125em;
- padding-left: 1.875em;
- padding-right: 1.875em;
- padding-bottom: 3.3125em;
- border-radius: 6.25em;
- 
- border-style:none;
 
- right: 0; 
- top: 11em;
-
- box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-} 
-
-#tweedeMenu button:hover {
-	background-color: #E5711E;
-}
-
-#tweedeMenu button:focus{
-	background-color: #D6CEC6;
-
-} */
-
-#tweedeMenu a {
+#tweedemenu a {
 	
-	font-size: .73em;
+	font-size: .625em;
 	font-weight: bold;
-	margin-left: 1em;
+	text-indent: none;
 	margin-bottom: 1em;
-    float: right;
-    display:inline;
+    
+    display: inline;
 	text-decoration:none;
 	color: white;
 	background-color:#C05D00;
-	border-radius: 10px;
+	border-radius: 8px;
 	padding: 9px 15px;
 
 	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
 	
 }
 
-#tweedeMenu a:hover {
+#tweedemenu a:hover {
 	background-color:#E5711E;
 }
 
 
+#tweedemenu li {
+	padding-right: .8em;
+	display: inline;
+	
+	
+}
 
 
 
-
-#tweedeMenu ul {
+#tweedemenu ul {
 	
 	list-style:none;
+	padding-left: 0;
+	text-align: center;
 	
 
 	
@@ -241,53 +307,70 @@ button>img {
 }
 
 
-/* om een of andere reden pakt de achtergrondkleur
-van #sectie1 hem niet en moet ik het delcaren in de algemene section tag...*/
+
 section {
-    background-color:#D6CEC6;
-	margin: 0 auto;
+    
 	font-size: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
+	padding-left: 1em;
+	padding-right: 1em;
+    
 
 
-   -webkit-columns:  1;
-   -moz-columns:  1;
-        columns:  1;
-
-}
-
-section img {
-	height: auto ;
-	opacity: 0.8;
-	text-align: center; 
-	padding-bottom: 1em;
-	border-radius: 30px;
-    width: 90%;
-
-	
-	
+  
 
 }
 
-section img:hover {
-	opacity: 1;
+article {
+	background-color: white;
+	margin-bottom: 1.25em;
+	border-radius: 10px;
+    
+	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+    
+    display:grid;
+    grid-template-columns: 4fr 1fr
 
 
 }
-	
-table  {
-	max-width: 800px;
+
+
+
+.sterren{
+	grid-column: 4 / 5;
+    height: 30px;
+	width: auto;
+    
+  
+
 }
+
+
+
+
+article img {
+ 
+  max-height: 9.375em;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 10px 10px 0 0 ;
+
 }
 
-#sectie1 {
+article h2 {
+    
+	color: white;
+    position: absolute;
+	margin: 50%;
+	text-align: center;
+	z-index: 3; 
+} 
 
-	
-	padding-top: 1.5em;
-	padding bottom:1px;
-	background-color: yellow;
-
+article p, h3  {
+    grid-column: 1 / 4;
+	padding-right: 1em;
+	display: flex;
+	justify-content: flex-end;
 
 }
 
@@ -296,14 +379,25 @@ table  {
 	background-color: #FCD900 ;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
+	
+}
+
+#sectie1 {
+
+	padding-top: 1.5em;
+	background-color: #D6CEC6;
+    padding-bottom: 1.5em;
+	
+
+
 }
 
 footer {
 	background-color:#675C53;
 	padding-top:2.5em;
-	padding-left: 10%;
-	padding-right: 10%;
 	padding-bottom: 2.5em;
+	padding-left: 1em;
+	padding-right: 1em;
 	color:white;
 }
 
@@ -313,12 +407,7 @@ footer img {
 
 }
 
-footer ul {
-	margin-top: 1em;
-	list-style-type:none;
-	margin-bottom: 4em;
-	text-align: left;
-}
+
 
 footer a{
 	display:block;
@@ -328,7 +417,7 @@ footer a{
 
 }
 
-footer img.social {
+footer .social {
 	float: right;
 	padding-left: 1em;
 }

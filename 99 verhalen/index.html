@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="nl">
      <head>
+     
      	<title>
      		U-Ov 99 verhalen
      	</title>
@@ -9,76 +10,98 @@
      	<link rel="stylesheet" type="text/css" href="./styles/main.css">
 
      	<!-- deze meta tag zorgt ervoor dat m'n website responsive kan zijn -->
-     	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-       
-	</head>
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+       </head>
 
 
+		
+
+	<body>
+		
 		<header>
 
 		<!-- dit is de bruine balk met het menu , het staat
 			boven de body omdat ik met de vormgeving het niet goed kreeg als losse menubalk..-->
 		
-			<ul>
+		
 				<!-- uov logo die je terugbrengt naar de homepage -->
-				<li class="uovlogo"><a href="index.html"> <img src="./images/uovlogo.png" alt="uovlogo"></a></li>
+				<a href="index.html"> <img src="./images/uovlogo.png" alt="uovlogo"></a>
 				<!-- profiel icoon waarbij je favorieten kunt bekijken -->
-				<li> <a href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a> </li>
+			<a href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a> 
                 
               <!-- <button class="search"><img src="./images/searchicoon.png" alt="searchicoon"></button> -->
-
-
-            <!-- dit is voor de search button -->
-			<form type="" action="search">
-				<input id="zoekknop" name="search" type="text" placeholder="Zoek een verhaal.."><input id="search_submit" type="image" src="./images/searchicoon.png" border="0" alt="Submit"</input>
-			</form>
-
-			</ul>
-
+           
 			
-
-
-
-	</header>
-
-
-	
-	<body>
+			<form  action="search">
+				<input id="zoekknop" name="search" type="text" placeholder="Zoek een verhaal.."> <input id="search_submit" type="image" src="./images/searchicoon.png"  alt="Submit">
+			</form>
+			
+		</header>
 
 
 
 
-        <!-- dit is het 'klikhier' menu -->
-		<nav id="tweedeMenu">
 
-	        <!-- <button>Klik hier!</button> -->
-
-			<ul>
-				<li class="categoriePagina"> <a href="korteverhalen.html">Ik heb weinig tijd</a> </li>
-				<li class="categoriePagina"> <a href="korteverhalen.html">Geef me een leuk verhaal</a> </li>
-				<li class="categoriePagina"> <a href="korteverhalen.html">Ik heb veel tijd</a> </li>
-			</ul>
-
-
-		</nav>
-
+       
 
         <div id="intro">
             <h1>99 verhalen voor op reis</h1>
 		    <p>Iets te lezen voor jou</p>
 		</div>
 
+
+
+		 <!-- dit is het 'klikhier' menu -->
+		<nav id="tweedemenu">
+
+	       
+
+			<ul>
+				<li> <a href="korteverhalen.html">Ik heb weinig tijd (20)</a> </li>
+				<li> <a href="korteverhalen.html">Geef me een leuk verhaal</a> </li>
+				<li> <a href="korteverhalen.html">Ik heb veel tijd (79)</a> </li>
+			</ul>
+
+
+		</nav>
+
 		
 
 		<section id="sectie1">
 
+
 	
-			<h2>Meest gelezen</h2>
+			<h1>Meest gelezen</h1>
+                     
+                <article> 
+                     <a href="korte-verhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom-verhaal"> </a>
+                      <h3>Droom</h3>
+                      <p>253 woorden</p>
+                      <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                </article>
 
 
-					 <a href="korte-verhalen.html"><img src="./images/nieuw vorgegeven DROOM.jpg" alt="Droom verhaal"> </a> 
-					 <a href="korte-verhalen.html"><img src="./images/haiku" alt="Haiku verhaal"> </a> 
-					 <a href="korte-verhalen.html"><img src="./images/mop" alt="Mop verhaal"> </a> 
+					
+
+                <article>
+					 <a href="korte-verhalen.html"><img src="./images/haiku" alt="Haiku verhaal"> </a>
+					 <h3>Haiku</h3>
+                     <p>14 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+				</article>
+
+
+
+
+                <article>
+					 <a href="korte-verhalen.html"><img src="./images/mop" alt="Mop verhaal"> </a>
+					<h3>Mop</h3>
+                    <p>163 woorden</p>
+                    <img class="sterren"  src="./images/driesterren.png" alt="sterren">
+				</article>
+
+
+
 				
 		</section>
 
@@ -88,39 +111,87 @@
 
 			<h1>Best beoordeeld</h1>
 
-			
-					 <a href="korteverhalen.html"> <img src="./images/route.png" alt="Route verhaal"> </a> 
-					 <a href="korteverhalen.html"> <img src="./images/Mop" alt="Mop verhaal"> </a> 
-					 <a href="korteverhalen.html"> <img src="./images/verhaal vb2.jpg" alt=""></a>
-				
+                <article>
+					 <a href="korteverhalen.html"> <img src="./images/route.png" alt="Route verhaal"> </a>
+					 <h3>Route</h3>
+					 <p>712 woorden</p>
+					 <img class="sterren" src="./images/viersterren.png" alt="sterren">
+				</article>
 
-				
-					<a href="korteverhalen.html"> <img src="./images/verhaal vb3.png" alt=""> </a> 
-					<a href="korteverhalen.html"> <img src="./images/nieuw vorgegeven DROOM.jpg" alt="Droom verhaal"> </a> 
-					<a href="korteverhalen.html"> <img src="./images/haiku" alt="Haiku verhaal"> </a> 
+
+
+                <article>
+					 <a href="korteverhalen.html"> <img src="./images/Mop" alt="Mop verhaal"> </a> 
+					<h3>Mop</h3>
+					<p>163 woorden</p>
+					<img class="sterren" src="./images/driesterren.png" alt="sterren">
+				</article>
+
+
+
+                <article>
+					<a href="korteverhalen.html"> <img src="./images/verhaal-vb2.jpg" alt="random"></a>
+					<h3>Geert Wilders</h3>
+					<p>387 woorden</p>
+					<img class="sterren" src="./images/tweesterren.png" alt="sterren">
+				</article>
+
+				   
+                    
+                <article>   	
+					<a href="korteverhalen.html"> <img src="./images/verhaal-vb3.png" alt="random"> </a> 
+				    <h3>Ongeluk</h3>
+				    <p>522 woorden</p>
+				    <img class="sterren" src="./images/viersterren.png" alt="sterren">
+				</article>
+
+
+
+                <article>	
+					<a href="korteverhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom verhaal"> </a> 
+                    <h3>Droom</h3>
+                    <p>253 woorden</p>
+                    <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                </article>
+
+
+			    	    
+                <article>
+				   <a href="korteverhalen.html"> <img src="./images/haiku" alt="Haiku verhaal"> </a>
+				   <h3>Haiku</h3>
+				   <p>14 woorden</p>
+				   <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+				</article>   
 				
 
 		</section>
 		
-		
-	</body>
-
-
 		<footer>
-			<!-- hier onder staan het uov logo en de social media icoontjes /buttons-->
-			<img src="./images/uovlogo.png" alt="uovlogo">
-			<a href="index.html"> <img class="social" src="./images/facebookicoon.png" alt="social-facebook"> </a>
-			<a href="index.html"> <img class="social" src="./images/twittericoon.png" alt="social-twitter"> </a>
+			<!-- hieronder staan het uov logo en de social media icoontjes /buttons-->
+			<a href="index.html"><img src="./images/uovlogo.png" alt="uovlogo"></a>
+			 
 
-			<!-- hier onder zitten nog wat linkjes die onderaan in de pagina staan -->
-			<ul>
-			<li><a href="">Voorwaarden</a></li>
-			<li><a href="">Disclaimer & privacy</a></li>
-			<li><a href="">Cookies</a></li>
-            </ul>
+			<a href="index.html"><img class="social" src="./images/facebookicoon.png" alt="social-facebook"> </a>
+
+
+			<a href="index.html"><img class="social" src="./images/twittericoon.png" alt="social-twitter"> </a>
+
+
+
+
+			<!-- hieronder zitten nog wat linkjes die onderaan in de pagina staan -->
+			<a href="index.html">Voorwaarden</a>
+			<a href="index.html">Disclaimer en privacy</a>
+			<a href="index.html">Cookies</a>
+            
+			
 			<p>99 verhalen website voor U-OV. Gemaakt door Severine Verhaar © Copyright 2018</p>
 			
 		</footer>
+</body>
+
+
+		
 
 
 
