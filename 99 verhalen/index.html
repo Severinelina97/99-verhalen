@@ -25,7 +25,7 @@
 		
 		
 				<!-- uov logo die je terugbrengt naar de homepage -->
-				<a href="index.html"> <img src="./images/uovlogo.png" alt="uovlogo"></a>
+				<a href="index.html"> <img id="uovlogo" src="./images/uovlogo.png" alt="uovlogo"></a>
 				<!-- profiel icoon waarbij je favorieten kunt bekijken -->
 			<a href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a> 
                 
@@ -33,7 +33,9 @@
            
 			
 			<form  action="search">
-				<input id="zoekknop" name="search" type="text" placeholder="Zoek een verhaal.."> <input id="search_submit" type="image" src="./images/searchicoon.png"  alt="Submit">
+				<button>Zoeken</button>
+				<input id="zoeken" type="text" placeholder="Zoek een verhaal.." value""> 
+				<input id="search_submit" type="submit" value "">
 			</form>
 			
 		</header>
@@ -72,12 +74,17 @@
 
 	
 			<h1>Meest gelezen</h1>
+
+			<div class="wrapper">
                      
                 <article> 
-                     <a href="korte-verhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom-verhaal"> </a>
+                    <a href="korte-verhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom-verhaal"> </a>
+                     
+                     <div class="titelcard">
                       <h3>Droom</h3>
                       <p>253 woorden</p>
                       <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                     </div> 
                 </article>
 
 
@@ -85,9 +92,12 @@
 
                 <article>
 					 <a href="korte-verhalen.html"><img src="./images/haiku" alt="Haiku verhaal"> </a>
+
+					 <div class="titelcard">
 					 <h3>Haiku</h3>
                      <p>14 woorden</p>
                      <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
 				</article>
 
 
@@ -95,13 +105,16 @@
 
                 <article>
 					 <a href="korte-verhalen.html"><img src="./images/mop" alt="Mop verhaal"> </a>
+
+					<div class="titelcard">
 					<h3>Mop</h3>
                     <p>163 woorden</p>
                     <img class="sterren"  src="./images/driesterren.png" alt="sterren">
+                    </div> 
 				</article>
 
 
-
+       </div>
 				
 		</section>
 
@@ -111,58 +124,79 @@
 
 			<h1>Best beoordeeld</h1>
 
+			<div class="wrapper">
+
                 <article>
 					 <a href="korteverhalen.html"> <img src="./images/route.png" alt="Route verhaal"> </a>
+
+					<div class="titelcard">
 					 <h3>Route</h3>
 					 <p>712 woorden</p>
 					 <img class="sterren" src="./images/viersterren.png" alt="sterren">
+					  </div> 
 				</article>
 
 
 
                 <article>
 					 <a href="korteverhalen.html"> <img src="./images/Mop" alt="Mop verhaal"> </a> 
+
+					<div class="titelcard">
 					<h3>Mop</h3>
 					<p>163 woorden</p>
 					<img class="sterren" src="./images/driesterren.png" alt="sterren">
+				    </div>
 				</article>
 
 
 
                 <article>
 					<a href="korteverhalen.html"> <img src="./images/verhaal-vb2.jpg" alt="random"></a>
+
+					<div class="titelcard">
 					<h3>Geert Wilders</h3>
 					<p>387 woorden</p>
 					<img class="sterren" src="./images/tweesterren.png" alt="sterren">
+				   </div> 
 				</article>
 
 				   
                     
                 <article>   	
 					<a href="korteverhalen.html"> <img src="./images/verhaal-vb3.png" alt="random"> </a> 
+
+				   <div class="titelcard">
 				    <h3>Ongeluk</h3>
 				    <p>522 woorden</p>
 				    <img class="sterren" src="./images/viersterren.png" alt="sterren">
+				    </div>
 				</article>
 
 
 
                 <article>	
 					<a href="korteverhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom verhaal"> </a> 
+
+					<div class="titelcard">
                     <h3>Droom</h3>
                     <p>253 woorden</p>
                     <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                    </div>
                 </article>
 
 
 			    	    
                 <article>
 				   <a href="korteverhalen.html"> <img src="./images/haiku" alt="Haiku verhaal"> </a>
+
+				   <div class="titelcard">
 				   <h3>Haiku</h3>
 				   <p>14 woorden</p>
 				   <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+				   </div> 
 				</article>   
 				
+				</div>
 
 		</section>
 		
