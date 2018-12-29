@@ -312,8 +312,8 @@ article {
 	height: 3.75em;
 	width: auto;
 	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-	display: flex;
-	justify-content: flex-start;
+	float: right;
+	background-color: transparent;
 
 }
 
