@@ -16,12 +16,12 @@ html {
 /*dit zijn mijn geimporteerde font-types van roboto */
 @font-face {
 	font-family: Roboto light;
-	src: url(fonts/Roboto/Roboto-Light.ttf);
+	src: url(99 verhalen/fonts/Roboto/Roboto-Light.ttf);
 }
 
 @font-face {
 	font-family: Roboto bold;
-	src: url(fonts/Roboto/Roboto-Bold.ttf);
+	src: url(99 verhalen/fonts/Roboto/Roboto-Bold.ttf);
 }
 	
 
