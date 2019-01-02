@@ -6,6 +6,9 @@
      	<title>
      		U-Ov 99 verhalen
      	</title>
+
+     	<meta charset="utf-8">
+
         <!-- hier staat mijn stylesheet gelinkt -->
      	<link rel="stylesheet" type="text/css" href="./styles/main.css">
 
@@ -48,24 +51,35 @@
        
 
         <div id="intro">
-            <h1>99 verhalen voor op reis</h1>
-		    <p>Iets te lezen voor jou</p>
+            <h1>20 korte verhalen</h1>
+		    <p>Kies een leesstijl</p>
 		</div>
 
 
 
-		 <!-- dit is het 'klikhier' menu -->
+		 
 		<nav id="tweedemenu">
 
 	       
-
 			<ul>
-				<li> <a href="korteverhalen.html">Ik heb weinig tijd (20)</a> </li>
-				<li> <a href="korteverhalen.html">Geef me een leuk verhaal</a> </li>
-				<li> <a href="korteverhalen.html">Ik heb veel tijd (79)</a> </li>
+				<li> <a class="filter-btn"  href="#">Rustige verhalen (15)</a> </li>
+				<li> <a class="filter-btn"  href="#">Drukke verhalen (14)</a> </li>
+				<li> <a class="filter-btn"  href="#">Minimalistische verhalen(8)</a> </li>
 			</ul>
 
 
+		</nav>
+
+		<nav id="filtermenu">
+
+			
+
+			<ul>
+				<li> <a href="korteverhalen.html">A-Z</a> </li>
+				<li> <a href="korteverhalen.html">Populariteit</a> </li>
+				<li> <a href="korteverhalen.html">Datum</a> </li>
+			</ul>
+			
 		</nav>
 
 		
@@ -73,12 +87,16 @@
 		<section id="sectie1">
 
 
-	
-			<h1>Meest gelezen</h1>
+	 <h1>Resultaten (20)</h1>
+			
 
 			<div class="wrapper">
-                     
-                <article> 
+
+
+               <!-- bij ieder article zet ik een classnaam en data item die overeenkomt met de data filter die ik later aanroep in javascript -->
+				<article class=" verhaal drukkeverhalen"> 
+
+
                     <a href="korte-verhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom-verhaal"> </a>
                    
                      
@@ -94,9 +112,67 @@
                 </article>
 
 
-					
 
-                <article>
+				<article class=" verhaal drukkeverhalen"> 
+
+
+                    <a href="korte-verhalen.html"><img src="./images/Voetbalanalistenzwart6.jpg" alt="Voetbalanalisten"> </a>
+                   
+                     
+                     <div class="titelcard">
+
+                     <div class="plusbutton">
+                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+                     <h3>Voetbalanalisten</h3>
+                     <p>280 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+                </article>
+
+
+
+                 <article class=" verhaal minimalistischeverhalen" > 
+
+
+                    <a href="korte-verhalen.html"><img src="./images/essentie.jpg" alt="essentie"> </a>
+                   
+                     
+                     <div class="titelcard">
+
+                     <div class="plusbutton">
+                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+                     <h3>Essentie</h3>
+                     <p>210 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
+                </article>
+
+
+
+                    <article class=" verhaal minimalistischeverhalen" > 
+                    
+
+                    <a href="korte-verhalen.html"><img src="./images/zombie.png" alt="zombie"> </a>
+                   
+                     
+                     <div class="titelcard">
+
+                     <div class="plusbutton">
+                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+                     <h3>Zombie</h3>
+                     <p>162 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
+                </article>
+                     
+                
+
+                <article class=" verhaal minimalistischeverhalen" >
+					 
+
 					 <a href="korte-verhalen.html"><img src="./images/haiku" alt="Haiku verhaal"> </a>
 
 
@@ -113,8 +189,66 @@
 
 
 
+				<article class=" verhaal rustigeverhalen" >
+					 
 
-                <article>
+					 <a href="korte-verhalen.html"><img src="./images/acrostichon.jpg" alt="Acrostichon"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Acrostichon</h3>
+                     <p>88 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+
+
+                <article class=" verhaal rustigeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/sonnet.jpg" alt="Sonnet"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Sonnet</h3>
+                     <p>103 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+
+
+				 <article class=" verhaal drukkeverhalen" >
+
+
+					 <a href="korte-verhalen.html"><img src="./images/route.png" alt="route"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Route</h3>
+                     <p>212 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+
+
+                <article class=" verhaal rustigeverhalen" >
+					 
+
 					 <a href="korte-verhalen.html"><img src="./images/mop" alt="Mop verhaal"> </a>
 
 
@@ -130,120 +264,241 @@
 				</article>
 
 
+
+
+				<article class=" verhaal minimalistischeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/notitie.png" alt="Notitie"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Notitie</h3>
+                     <p>46 woorden</p>
+                     <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+
+
+
+				<article class=" verhaal rustigeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/verhaal-vb.jpg" alt="Random"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Random</h3>
+                     <p>150 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+
+
+
+				<article class=" verhaal rustigeverhalen" >
+
+
+					 <a href="korte-verhalen.html"><img src="./images/vrije-versvorm.jpg" alt="Vrije versvorm"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Vrije Versvorm</h3>
+                     <p>175 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				</article>
+
+					
+
+
+					<article class=" verhaal drukkeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/iphone.jpg" alt="Iphone"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Iphone</h3>
+                     <p>67 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+
+					
+
+
+					<article class=" verhaal drukkeverhalen" >
+					 
+
+
+					 <a href="korte-verhalen.html"><img src="./images/woordenrally.png" alt="Woordenrally"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Woordenrally</h3>
+                     <p>162 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+				 
+
+
+				 <article class=" verhaal rustigeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/verhaal-vb2.jpg" alt="Geert wilders"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Ongeluk</h3>
+                     <p>186 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+
+
+
+				 <article class=" verhaal rustigeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/kater.jpg" alt="Kater"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Kater</h3>
+                     <p>66 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+
+				 
+				 
+				 <article class=" verhaal minimalistischeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/heroischvers.jpg" alt="heroisch vers"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Heroisch vers</h3>
+                     <p>201 woorden</p>
+                     <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+				 
+
+
+				 <article class=" verhaal minimalistischeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/verhaal-vb3.png" alt="tanka"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Tanka</h3>
+                     <p>25 woorden</p>
+                     <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+				 
+
+
+				 <article class=" verhaal minimalistischeverhalen" >
+					 
+                 
+                 <a href="korte-verhalen.html"><img src="./images/schoorsteen.jpg" alt="Schoorsteen"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Schoorsteen</h3>
+                     <p>72 woorden</p>
+                     <img class="sterren" src="./images/viersterren.png" alt="sterren">
+                     </div> 
+				 </article>
+
+				 
+
+
+				 <article class=" verhaal drukkeverhalen" >
+					 
+
+					 <a href="korte-verhalen.html"><img src="./images/ericlucassen.jpg" alt="eric lucassen"> </a>
+
+
+					 <div class="titelcard">
+
+					 <div class="plusbutton">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
+
+					 <h3>Eric lucassen</h3>
+                     <p>115 woorden</p>
+                     <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                     </div> 
+				 </article>
        </div>
-				
+
+
+
+       <!--
+
+       <a class="resultatenlink" href="korteverhalen.html">1</a>
+       <a class="resultatenlink" href="korteverhalen.html">2</a>
+       <a class="resultatenlink" href="korteverhalen.html">3</a>
+		-->		
 		</section>
 
 
 
-		<section id="sectie2">
-
-			<h1>Best beoordeeld</h1>
-
-			<div class="wrapper">
-
-                <article>
-					 <a href="korteverhalen.html"> <img src="./images/route.png" alt="Route verhaal"> </a>
-
-
-					<div class="titelcard">
-
-						<div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-					 <h3>Route</h3>
-					 <p>712 woorden</p>
-					 <img class="sterren" src="./images/viersterren.png" alt="sterren">
-					  </div> 
-				</article>
-
-
-
-                <article>
-					 <a href="korteverhalen.html"> <img src="./images/Mop" alt="Mop verhaal"> </a> 
-
-
-					<div class="titelcard">
-                    
-                    <div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-					<h3>Mop</h3>
-					<p>163 woorden</p>
-					<img class="sterren" src="./images/driesterren.png" alt="sterren">
-				    </div>
-				</article>
-
-
-
-                <article>
-					<a href="korteverhalen.html"> <img src="./images/verhaal-vb2.jpg" alt="random"></a>
-
-
-					<div class="titelcard">
-
-						<div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-					<h3>Geert Wilders</h3>
-					<p>387 woorden</p>
-					<img class="sterren" src="./images/tweesterren.png" alt="sterren">
-				   </div> 
-				</article>
-
-				   
-                    
-                <article>   	
-					<a href="korteverhalen.html"> <img src="./images/verhaal-vb3.png" alt="random"> </a> 
-
-
-				   <div class="titelcard">
-
-				   	<div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-				    <h3>Ongeluk</h3>
-				    <p>522 woorden</p>
-				    <img class="sterren" src="./images/viersterren.png" alt="sterren">
-				    </div>
-				</article>
-
-
-
-                <article>	
-					<a href="korteverhalen.html"><img src="./images/nieuw-vorgegeven-DROOM.jpg" alt="Droom verhaal"> </a> 
-
-					<div class="titelcard">
-
-					<div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-                    <h3>Droom</h3>
-                    <p>253 woorden</p>
-                    <img class="sterren" src="./images/viersterren.png" alt="sterren">
-                    </div>
-                </article>
-
-
-			    	    
-                <article>
-				   <a href="korteverhalen.html"> <img src="./images/haiku" alt="Haiku verhaal"> </a>
-
-
-				   <div class="titelcard">
-
-				   	<div class="plusbutton">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg></div>
-
-				   <h3>Haiku</h3>
-				   <p>14 woorden</p>
-				   <img class="sterren" src="./images/tweesterren.png" alt="sterren">
-				   </div> 
-				</article>   
-				
-				</div>
-
-		</section>
+			    
 		
 		<footer>
 			<!-- hieronder staan het uov logo en de social media icoontjes /buttons-->
@@ -267,7 +522,14 @@
 			<p>99 verhalen website voor U-OV. Gemaakt door Severine Verhaar © Copyright 2018</p>
 			
 		</footer>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+
 </body>
+
 
 
 		

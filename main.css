@@ -29,8 +29,9 @@ header  {
 	
 	text-align:center;
 	display:grid;
-    justify-items:start;
+    
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
     background-color: #675C53;
 	position: fixed;
 	width: 100%;
@@ -54,26 +55,28 @@ header img {
 
 
 #uovlogo {
-	grid-column-start:1;
-	grid-column-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
 	
 	
 }
 
 #accounticoon {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	justify-self:start;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	
 
 
 }
 
 #search_submit {
-	grid-column-start: 3;
-	grid-column-end: 4;
-	justify-self:end;
 
-	 background-color: transparent;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+	
+  background-color: transparent;
   padding-right: 2em;
   height: 1.75em;
   background-image:  url("../images/searchicoon.png");
@@ -190,7 +193,8 @@ body {
 
 
 #tweedemenu {
-	padding-bottom: 1em;
+
+	
 }
 
 
@@ -237,6 +241,47 @@ body {
 
 	
 	
+}
+
+#filtermenu {
+
+	padding-bottom: 1em;
+
+}
+
+#filtermenu a {
+
+
+	font-size: .625em;
+	font-weight: bold;
+	text-indent: none;
+	margin-bottom: 1em;
+    
+    display: inline-block;
+	text-decoration:none;
+	color: white;
+	background-color:#7E7873;
+	border-radius: 8px;
+	padding: 9px 15px;
+
+	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+	
+}
+
+#filtermenu li {
+	display: inline;
+	padding-right: .8em;
+}
+
+#filtermenu ul {
+	list-style:none;
+	padding-left: 0;
+	text-align: center;
+}
+
+#filtermenu p {
+	padding-left: 1em;
+	text-align:center;
 }
 
 
@@ -293,7 +338,7 @@ article {
     margin-bottom: 1.3em;
 
 
-    width: 12em;
+    width: 14em;
 
     grid-column-start: 2;
     grid-column-end: 3;
@@ -374,6 +419,14 @@ article a {
 	
 
 
+}
+
+.resultatenlink {
+	font-size: 2em;
+	text-align:center;
+	padding-right: 1em;
+	color:black;
+	padding-bottom: 1em;
 }
 
 footer {
