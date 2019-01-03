@@ -69,18 +69,18 @@ function executeClassCheck (){
 	
 
 	if (articleClass=="rustigeverhalen"){
-		wrapperChildren.className("drukkeverhalen").style.display="none";
-		wrapperChildren.className("minimalistischeverhalen").style.display="none";
+		document.getElementByClassName("drukkeverhalen").style.display="none";
+		document.getElementByClassName("minimalistischeverhalen").style.display="none";
 	}
 
 	if (articleClass="drukkeverhalen"){
-       wrapperChildren.className("rustigeverhalen").style.display="none";
-        wrapperChildren.className("minimalistischeverhalen").style.display="none";
+       document.getElementByClassName("rustigeverhalen").style.display="none";
+        document.getElementByClassName("minimalistischeverhalen").style.display="none";
 	}
 
 	if (articleClass=="minimalistischeverhalen"){
-		wrapperChildren.className("rustigeverhalen").style.display="none";
-	    wrapperChildren.className("drukkeverhalen").style.display="none";
+		document.getElementByClassName("rustigeverhalen").style.display="none";
+	    document.getElementByClassName("drukkeverhalen").style.display="none";
 	}
 
 
