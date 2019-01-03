@@ -68,17 +68,17 @@ function executeClassCheck (){
 
 	
 
-	if (articleClass=="verhaal rustigeverhalen"){
+	if (articleClass=="rustigeverhalen"){
 		wrapperChildren.className("drukkeverhalen").style.display="none";
 		wrapperChildren.className("minimalistischeverhalen").style.display="none";
 	}
 
-	if (articleClass="verhaal drukkeverhalen"){
+	if (articleClass="drukkeverhalen"){
        wrapperChildren.className("rustigeverhalen").style.display="none";
         wrapperChildren.className("minimalistischeverhalen").style.display="none";
 	}
 
-	if (articleClass=="verhaal minimalistischeverhalen"){
+	if (articleClass=="minimalistischeverhalen"){
 		wrapperChildren.className("rustigeverhalen").style.display="none";
 	    wrapperChildren.className("drukkeverhalen").style.display="none";
 	}
@@ -89,10 +89,10 @@ function executeClassCheck (){
 
 for (var i = 0; i < filterbtn.length; i++){
          filterbtn[i].addEventListener('click', executeClassCheck);
-     console.log(executeClassCheck)
+     
      }
 
-
+console.log(executeClassCheck)
 
 
 
