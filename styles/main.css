@@ -25,6 +25,15 @@ html {
 }
 	
 
+.hide {
+
+display:none;
+	
+}
+
+
+
+
 header  {
 	
 	text-align:center;
@@ -200,7 +209,7 @@ body {
 
 
 
-#tweedemenu a {
+#tweedemenu a{
 	
 	font-size: .625em;
 	font-weight: bold;
@@ -220,6 +229,12 @@ body {
 
 #tweedemenu a:hover {
 	background-color:#E5711E;
+	transition: .6s;
+}
+
+#tweedemenu a:focus{
+	background-color:black;
+	padding: 11px 18px;
 }
 
 
@@ -267,6 +282,8 @@ body {
 	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
 	
 }
+
+
 
 #filtermenu li {
 	display: inline;
