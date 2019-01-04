@@ -1,5 +1,5 @@
 
-/* ik heb met mediaquery verschillende padding waardes
+//* ik heb met mediaquery verschillende padding waardes
 gegeven omdat het dan beter meeschaald op mobiel */
 html {
   font-size: .8em;
@@ -25,11 +25,7 @@ html {
 }
 	
 
-.hide {
 
-display:none;
-	
-}
 
 
 
@@ -513,7 +509,7 @@ header {
 
 }
 
-.wrapper {
+#wrapper {
 
 	display:grid;
 
@@ -537,15 +533,12 @@ section {
 	padding-top:1.875em;
 	
 }
-
 #sectie1 {
 	padding-bottom:1.875em;
 }
-
 #sectie2 {
 	padding-bottom:1.875em;
 }
-
 #sectie2 h1 {
 	padding-top: 1.875em;
 } */
@@ -600,7 +593,7 @@ section {
 
 }
 
-.wrapper {
+#wrapper {
 
 	display:grid;
 
@@ -639,8 +632,3 @@ footer {
 
 
  
-
-
-
-
-
