@@ -26,8 +26,40 @@ html {
 	
 
 
+.letter {
+	height: 5em;
+	width: auto;
+}
 
+main {
+	padding-left: 1em;
+	padding-right: 1em;
+	background-image: url("../images/achtergrond-verhaal.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
+#verhaalcontent {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+main p:first-of-type{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-color:rgba(255, 255, 255, 0.3);
+	padding: 1em;
+	
+}
+
+ main p:last-of-type{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	color: white;
+	background-color:rgba(0, 0, 0, 0.3);
+	padding: 1em;
+}
 
 
 header  {
@@ -40,7 +72,7 @@ header  {
     background-color: #675C53;
 	position: fixed;
 	width: 100%;
-	padding: 0.625em 1em;
+	padding: 0.3em 1em;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -52,10 +84,18 @@ header  {
 }
 
 header img {
-	height: 25px;
+	height: 29px;
 	left: 0;
 		
 	
+}
+
+#top {
+	background-color:white;
+	border-radius: 10px;
+	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+
+
 }
 
 
@@ -71,8 +111,13 @@ header img {
 	grid-column-start: 3;
 	grid-column-end: 4;
 	
+   
 
+}
 
+#toegevoegd {
+	clip-path: circle(30px at 35px 35px);
+	background-color: vl;
 }
 
 #search_submit {
@@ -97,11 +142,13 @@ header img {
 
 
 #intro {
-	
+	text-align: center;
 	margin-top: 5em;
+	padding-top: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
+
 	
 	
 }
@@ -197,10 +244,7 @@ body {
 
 
 
-#tweedemenu {
 
-	
-}
 
 
 
@@ -214,23 +258,24 @@ body {
     
     display: inline-block;
 	text-decoration:none;
-	color: white;
-	background-color:#C05D00;
+	color: grey;
+	border-style:solid;
+	border-color: grey;
 	border-radius: 8px;
 	padding: 9px 15px;
 
 	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-	
+	transition: ease-in-out .6s;
 }
 
-#tweedemenu a:hover {
-	background-color:#E5711E;
-	transition: .6s;
+#tweedemenu a:hover{
+padding: 11px 18px;
 }
 
 #tweedemenu a:focus{
-	background-color:black;
+	color:#C05D00 ;
 	padding: 11px 18px;
+	border-color:#C05D00;
 }
 
 
@@ -256,7 +301,6 @@ body {
 
 #filtermenu {
 
-	padding-bottom: 1em;
 
 }
 
@@ -364,16 +408,38 @@ article {
 
 
 
-.plusbutton svg {
+.plusbutton>svg {
 
     
 	height: 3.75em;
 	width: auto;
-	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-	float: right;
-	background-color: transparent;
+	position: absolute;
+	margin-left:10.3em;
+    
 
+    margin-bottom: 10px;
+
+    transition: ease-in-out .4s;
 }
+
+.plusbutton>svg:hover {
+	webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); 
+    height: 4em;
+	width: auto;
+	fill:transparent;
+}
+
+.plusbutton>svg>g{
+stroke: #7D6D60;
+}
+
+.plusbutton>svg>g:hover{
+
+stroke: green;
+}
+
+
 
 
 
@@ -493,6 +559,10 @@ footer .social {
 }
 
 
+
+
+
+
 /*tablet formaat schermbreedte */
 @media only screen and (min-width:768px){
 
@@ -577,7 +647,19 @@ html {
 	text-align: left;
 
 }
+
+#filtermenu {
+	padding-left:9.375em;
+}
+
+
+#filtermenu ul {
+	text-align:left;
+}
+
+
 #intro {
+	text-align:left;
 	padding-left: 9.375em;
 	padding-right:9.375em;
 	
