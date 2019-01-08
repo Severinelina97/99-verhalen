@@ -64,15 +64,18 @@ main p:first-of-type{
 
 header  {
 	
-	text-align:center;
+	
 	display:grid;
-    
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto;
+	grid-template-rows: 1fr;
+
     background-color: #675C53;
 	position: fixed;
-	width: 100%;
-	padding: 0.3em 1em;
+	max-width: 100%;
+	padding-top: 0.3em ;
+	padding-bottom: 0.3em;
+	padding-left:1em;
+	padding-right: 1em;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -85,7 +88,7 @@ header  {
 
 header img {
 	height: 29px;
-	left: 0;
+	
 		
 	
 }
@@ -94,40 +97,51 @@ header img {
 	background-color:white;
 	border-radius: 10px;
 	box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+	margin-left: 1em;
+	margin-right: 1em;
 
 
 }
 
 
-#uovlogo {
+header a:nth-of-type(2) {
+	grid-column-start: 3;
+	grid-column-end: 4;
+
+  justify-self: end
+	
+	
+}
+
+
+
+header a:first-of-type {
 	grid-column-start: 2;
 	grid-column-end: 3;
 
-	
-	
-}
 
-#accounticoon {
-	grid-column-start: 3;
-	grid-column-end: 4;
+	
+  justify-self: center;
 	
    
 
 }
 
-#toegevoegd {
-	clip-path: circle(30px at 35px 35px);
-	background-color: vl;
+
+
+
+form {
+    grid-column-start: 1;
+	grid-column-end: 2;
+
+	justify-self: start;
+	 
 }
 
 #search_submit {
 
-	grid-column-start: 1;
-	grid-column-end: 2;
-	
-	
   background-color: transparent;
-  padding-right: 2em;
+  padding-left: 2em;
   height: 1.75em;
   background-image:  url("../images/searchicoon.png");
   background-size:contain;
@@ -137,6 +151,56 @@ header img {
   cursor:pointer;
   z-index: 6;
    
+}
+
+.pulse {
+	text-decoration: none;
+	transition: ease-in .8s
+}
+
+.pulse::before {
+	display: inline-block;
+    text-align: center;
+    content: "1";
+    color: #fff;
+    background-color: green;
+    width: 1.3em;
+    height: 1.3em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    padding: 0;
+    animation: pulse 2s infinite;
+
+    box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
+}
+
+
+/*niet mijn eigen code bron = https://codepen.io/olam/pen/zcqea */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }
 
 
@@ -158,10 +222,7 @@ header img {
 
 }
 
-/*html,body {
-    margin:0;
-    padding:0;
-}*/
+
 
 body {
 	margin: 0 auto;
@@ -182,11 +243,11 @@ h {
 
  
 
-header>form>button{
+/*header>form>button{
 	text-decoration: none;
 	visibility: hidden;
 
-}
+}*/
 
 
 
@@ -206,6 +267,8 @@ body {
 }
 
 
+
+
 #zoeken {
 
 	
@@ -215,11 +278,9 @@ body {
   color: white;
   padding: 3px;
   padding-right: 60px;
-  width: 0px;
-  position: absolute;
   top: .8em;
-  right: 0;
-  background: none;
+  background-color: transparent;
+  width: 30%;
   z-index: 1;
   transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
   cursor: pointer;
@@ -233,13 +294,12 @@ body {
 }
 
 #zoeken:focus {
-	width: 30%;
+	width: 50%;
     cursor: text;
 	border-bottom-style:solid;
 	border-bottom-color: #E5711E;
 	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
 }
-
 
 
 
@@ -282,6 +342,7 @@ padding: 11px 18px;
 #tweedemenu li {
 	padding-right: .8em;
 	display: inline;
+	text-align: center;
 	
 	
 }
@@ -370,6 +431,10 @@ article {
 
 	grid-template-columns: repeat (1fr, 2) ;
 	grid-template-rows: 6.25em 3.125em; 
+	
+	transition: ease-in-out .6s;
+    
+
     
 
 
@@ -411,7 +476,8 @@ article {
 .plusbutton>svg {
 
     
-	height: 3.75em;
+	height: 3.5em;
+	padding-top: 0.2em;
 	width: auto;
 	position: absolute;
 	margin-left:10.3em;
@@ -564,7 +630,7 @@ footer .social {
 
 
 /*tablet formaat schermbreedte */
-@media only screen and (min-width:768px){
+@media only screen and (min-width:760px){
 
 
 
@@ -577,6 +643,11 @@ header {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 
+}
+
+#top {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 #wrapper {
@@ -613,9 +684,7 @@ section {
 	padding-top: 1.875em;
 } */
 
-article {
-	margin-top: 1.5625em;
-}
+
 
 footer {
 	padding-left:1.5em;
@@ -633,9 +702,13 @@ html {
 	font-size: 1em;
 }
 	header{
+
 		padding-left:9.375em;
 		padding-right:9.375em;
 	}
+
+
+
 
 #tweedemenu {
 	padding-left:9.375em ;
@@ -664,6 +737,38 @@ html {
 	padding-right:9.375em;
 	
 	
+}
+
+header a:nth-of-type(2) {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	
+    justify-self: end;
+	
+	
+}
+
+
+
+header a:first-of-type {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+    justify-self: start;
+	
+   
+
+}
+
+
+
+
+form {
+    grid-column-start: 2;
+	grid-column-end: 3;
+
+	justify-self: end;
+	 
 }
 
 section {

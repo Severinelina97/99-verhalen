@@ -1,1 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.77 411.77"><defs><style>.cls-1{fill:#7b6d62;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:12px;}.cls-2{fill:none;}</style></defs><title>PLUSBUTTON</title><circle class="cls-1" cx="205.89" cy="205.89" r="199.89"/><line class="cls-2" x1="205.89" y1="72.75" x2="205.89" y2="345.46"/><line class="cls-2" x1="342.24" y1="205.89" x2="69.53" y2="205.89"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 99.9" style="enable-background:new 0 0 100 99.9;" xml:space="preserve">
+<title>Ecommerce RTE</title>
+<g>
+	<path d="M50,89.5c21.8,0,39.5-17.7,39.5-39.5S71.8,10.5,50,10.5S10.5,28.2,10.5,50S28.2,89.5,50,89.5z M25.6,25.6
+		c13.5-13.5,35.3-13.5,48.8,0s13.5,35.3,0,48.8s-35.3,13.5-48.8,0C19.1,67.9,15.5,59.1,15.5,50C15.5,40.8,19.1,32.1,25.6,25.6z"/>
+	<path d="M31.3,52.1h15.9v17.3c0,1.4,1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5V52.1h17.3c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5H52.1V31.3
+		c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5v15.9H31.3c-1.4,0-2.5,1.1-2.5,2.5S29.9,52.1,31.3,52.1z"/>
+</g>
+</svg>

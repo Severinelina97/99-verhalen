@@ -1,17 +1,14 @@
 
-//de boventste buttons
-//var buttons = document.querySelectorAll(".filter-btn")
-
-//var categorie = document.getElementByClassName(".verhaal");
 
 
+//check of code werkt ..
 console.log ('ikwerk');
 
 
 
-var filterbtn = document.getElementsByClassName(".filter-btn");
 
-
+//Functie voor het filteren op de categoriepagina - korteverhalen..
+var filterbtn = document.getElementsByClassName("filter-btn");
 
 var wrapper =document.getElementById("wrapper");
 
@@ -19,32 +16,33 @@ var wrapperChildren = wrapper.children;
 
 
 
-
+// hier worden alle buttons naar geluisterd een voor een gecontroleerd op classname
 for (var i = 0; i < filterbtn.length; i++){
-         filterbtn[i].addEventListener('click', executeClassCheck);}
+    filterbtn[i].addEventListener('click', executeClassCheck);
+}
 
-     console.log(executeClassCheck);
 
-
+// dit is de functie vervolgens word uitgevoerd vanuit de eventlistener
 function executeClassCheck (event){
 
+	var btnClass = event.currentTarget.classList.item(1);
 
-	var btnClass = event.currentTarget.classList.item(2);
-
-	var wrapperChildren = document.getElementById("articleWrap").children;
-
+	var wrapperChildren = document.getElementById("wrapper").children;
 
 
-	for ( i=0; i < wrapperChildren; i++){
+	for ( i=0; i < wrapperChildren.length; i++){
 
-		var iets = wrapperChildren[i].classList.item(2)
+		var iets = wrapperChildren[i].classList.item(1)
 
-		if (wrapperChildren[i].classList.item(2) !== btnClass ){
+		if (wrapperChildren[i].classList.item(1) !== btnClass ){
 			wrapperChildren[i].style.display="none";
+		} else {
+			wrapperChildren[i].style.display="";
 		}
 
-		
-
+		// bij deze functie word gekeken of de class matcht van de button met de verhalen
+		// als dit klopt dan worden alleen de verhalen laten zien die matchen met de button
+     delay (600)
 
 	}
 
