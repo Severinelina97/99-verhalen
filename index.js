@@ -55,7 +55,7 @@ function executeClassCheck(event) {
 
 //functie voor toevoegknop
 
-
+/*
 
     plusbutton.addEventListener("click", checked(){
 
@@ -64,7 +64,7 @@ function executeClassCheck(event) {
     }
     
 
-
+*/
 
 
 
