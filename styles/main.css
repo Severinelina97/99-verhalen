@@ -25,42 +25,78 @@ gegeven omdat het dan beter meeschaald op mobiel */ html {
 
 
 
-.letter {
-    height: 5em;
+#hetverhaal {
+    height: 88em;
+    width:100%;
+    margin: 0 auto;
+    background-color: #FCD900;
+    background-image: url("../images/mobile-droom.gif");
+    background-position: center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    border: 2em;
+
+
+
+}
+
+
+
+.on-af {
+    
+    background-color: #7E7873;
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    
+
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 9px 15px;
+    transition: ease-in .4s;
+}
+
+.on-af .geklikt{
+    
+    padding: 11px 17px;
+    background-color: #E5711E ;
+}
+
+body.popup aside {
+    background-color: black;
+    opacity: .9;
+    color: white;
+    font-weight: regular;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left:1em;
+    padding-right: 1em;
+    position: fixed;
+    bottom: 0;
+    position:center;
+
+
+}
+
+aside {
+    bottom:0;
+    position: fixed;
+    opacity:0;
+
+    transition: ease-in-out .8s;
+
+}
+
+aside img {
+    padding-left: 90%;
+    cursor: pointer;
+    height: 28px;
     width: auto;
 }
-
-main {
-    padding-left: 1em;
-    padding-right: 1em;
-    background-image: url("../images/achtergrond-verhaal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#verhaalcontent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
-
-main p:first-of-type {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 1em;
-
-}
-
-main p:last-of-type {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 1em;
-}
-
-
 header {
 
 
@@ -98,8 +134,15 @@ header img {
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 3.5em;
 
 
+}
+
+#top-verhaal {
+
+    
+    margin-bottom: 3.5em;
 }
 
 
@@ -107,7 +150,8 @@ header a:nth-of-type(2) {
     grid-column-start: 3;
     grid-column-end: 4;
 
-    justify-self: end
+    justify-self: end;
+    
 }
 
 
@@ -152,21 +196,26 @@ form {
 
 .pulse {
     text-decoration: none;
-    transition: ease-in .8s
+
+
+    
 }
 
-.pulse:after {
+body.toevoegen .pulse:after {
     display: inline-block;
     text-align: center;
+   
     content: "1";
-    color: #fff;
-    background-color: green;
+    color: #675C53;
+    font-weight: bold;
+    background-color: white;
     width: 1.3em;
     height: 1.3em;
     -moz-border-radius: 2em;
     -webkit-border-radius: 2em;
     border-radius: 2em;
     padding: 0;
+    
     animation: pulse 2s infinite;
 
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
@@ -405,6 +454,8 @@ section {
 
 }
 
+
+
 article {
 
 
@@ -418,16 +469,22 @@ article {
 
     display: grid;
 
+
     grid-template-columns: repeat (1fr, 2);
     grid-template-rows: 6.25em 3.125em;
 
-    transition: ease-in-out .6s;
+    
+
+    transition: opacity ease-in .8s;
 
 
 
 
 
 }
+
+
+
 
 .titelcard {
 
@@ -490,15 +547,12 @@ article {
     stroke: #7D6D60;
 }
 
-/*.plusbutton > svg:hover > g {
 
-    stroke: green;
-}*/
 
 
 /*button checked annimatie*/
 
-.checked > g {
+body.toevoegen svg.add g:nth-of-type(1) {
     stroke:green;
 }
 
@@ -510,7 +564,7 @@ article {
     transition: ease-in .2s;
 }
 
-.checked:hover .streep1 {
+body.toevoegen svg.add .streep1 {
 
     transform:
     scale(0.999)
@@ -519,13 +573,14 @@ article {
     translate(-41.5px, -63.5px)
 }
 
-.checked:hover .streep2 {
+body.toevoegen svg.add .streep2 {
     transform: 
     scale(0.999)
     translate(63.5px, 68.5px) 
     rotate(-140deg) 
     translate(-77.5px, -63.5px);
 }
+
 
 
 
@@ -574,7 +629,7 @@ article a {
 
 #sectie2 {
 
-    background-color: #9A918A;
+    background-color: white;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 
@@ -648,8 +703,23 @@ footer .social {
     padding-left: 1em;
 }
 
+footer p {
+    font-size : .8em;
+}
 
+/* minor break point*/
+@media only screen and (min-width: 690px) {
 
+    #hetverhaal {
+    height: 38.6em;
+    width:100%;
+    margin: 0 auto;
+    background-image: url("../images/desktop-droom.gif");
+    background-position: center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
 
 
 
@@ -664,15 +734,14 @@ footer .social {
         padding-right: 1.5em;
     }
 
-    #intro {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
 
-    }
+
+    
 
     #top {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 1em;
     }
 
     #wrapper {
@@ -694,6 +763,8 @@ footer .social {
 
 
     }
+
+
 
     /*#sectie1 h1{
 	padding-top:1.875em;
@@ -717,7 +788,7 @@ footer .social {
 
 }
 
-
+/*desktop scherm */
 @media only screen and (min-width:980px) {
 
     html {
@@ -730,21 +801,44 @@ footer .social {
     }
 
 
+#hetverhaal {
+    height: 46em;
+    width:100%;
+    margin: 0 auto;
 
+    
+    background-image: url("../images/desktop-droom.gif");
+    
+    background-position: center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+
+
+
+}
+
+
+
+   #top {
+    text-align: left;
+
+   }
 
     #tweedemenu {
-        padding-left: 9.375em;
+        
         text-align: left;
 
     }
 
     #tweedemenu ul {
         text-align: left;
+        padding-left: 1em;
 
     }
 
     #filtermenu {
-        padding-left: 9.375em;
+       
     }
 
 
@@ -752,11 +846,14 @@ footer .social {
         text-align: left;
     }
 
+ 
+   
+
 
     #intro {
         text-align: left;
-        padding-left: 9.375em;
-        padding-right: 9.375em;
+  
+     padding-left: 9.375em;
 
 
     }

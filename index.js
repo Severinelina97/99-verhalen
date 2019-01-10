@@ -16,7 +16,18 @@ var wrapperChildren = wrapper.children;
 /*var notificatie = window.getComputedStyle(
     document.getElementById('.pulse'), ':before')*/
 
-var plusbutton = document.getElementsByClassName("toevoegen");
+
+
+window.onload=function(){
+    setTimeout(popUp, 8000);
+}
+
+function popUp (){
+    document.body.classList.add("popup");
+    
+
+}
+
 
 
 
@@ -53,18 +64,64 @@ function executeClassCheck(event) {
 }
 
 
-//functie voor toevoegknop
+//functie voor toevoegknop -van joost , voeg een class op de body toe is makkelijker
+//codepen van joost - collections filter geel met zwart
+var plusbutton = document.querySelector(".add");
+
+plusbutton.addEventListener("click", toevoegen);
+
+function toevoegen (){
+    document.body.classList.toggle("toevoegen");
+
+}
+
+
+
+var sluiten = document.querySelector("aside img");
+
+sluiten.addEventListener("click", sluiten);
+
+function sluiten (){
+    document.body.classList.remove("popup");
+}
+
+
+
+
+
+//Joost zegt doe het via css voeg een classlist toe met toggle (filter)
 
 /*
 
-    plusbutton.addEventListener("click", checked(){
+function executeClassCheck(event) {
 
-        plusbutton.classList.add("checked")
+    var btnClass = event.currentTarget.classList.item(1);
+
+    var wrapperChildren = document.getElementById("wrapper").children;
+
+
+    for (i = 0; i < wrapperChildren.length; i++) {
+
+        var iets = wrapperChildren[i].classList.item(1)
+
+        if (wrapperChildren[i].classList.item(1) !== btnClass) {
+            wrapperChildren[i].classList.toggle('filter')
+        }
+
+        // bij deze functie word gekeken of de class matcht van de button met de verhalen
+        // als dit klopt dan worden alleen de verhalen laten zien die matchen met de button
+        
 
     }
     
+}
 
 */
+
+
+       
+
+
 
 
 

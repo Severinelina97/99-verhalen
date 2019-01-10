@@ -22,26 +22,25 @@
 
 <body>
 
-    <header>
+   <header>
 
         <!-- dit is de bruine balk met het menu , het staat
-			boven de body omdat ik met de vormgeving het niet goed kreeg als losse menubalk..-->
+            boven de body omdat ik met de vormgeving het niet goed kreeg als losse menubalk..-->
+        <form action="search">
+            <!--<input id="zoeken" type="text" placeholder="Zoek eenverhaal.." value""> -->
+            <button id="search_submit"></button>
+        </form>
 
 
-        <!-- profiel icoon waarbij je favorieten kunt bekijken -->
-        <a href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a>
 
         <!-- uov logo die je terugbrengt naar de homepage -->
         <a href="index.html"> <img id="uovlogo" src="./images/uovlogo.png" alt="uovlogo"></a>
 
-        <!-- <button class="search"><img src="./images/searchicoon.png" alt="searchicoon"></button> -->
+        <!-- profiel icoon waarbij je favorieten kunt bekijken -->
+        <a class="pulse" href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a>
 
 
-        <form action="search">
-            <button>Zoeken</button>
-            <input id="zoeken" type="text" placeholder="Zoek een verhaal.." value "">
-            <input id="search_submit" type="submit" value "">
-        </form>
+
 
     </header>
 
@@ -49,40 +48,29 @@
 
 
 
-    <div id="top">
+    <div id="top-verhaal">
 
         <div id="intro">
             <p>Uit 20 korte verhalen</p>
             <h1>Droom</h1>
+            <h2>Molovich, januari 2019</h2>
         </div>
 
-        <main>
+    </div>
 
-            <img class="letter" src="./fonts/DR.png" alt="titel">
-            <img class="letter" src="./fonts/R2.png" alt="titel">
-            <img class="letter" src="./fonts/OO.png" alt="titel">
-            <img class="letter" src="./fonts/M.png" alt="titel">
-            <img class="letter" src="./fonts/M2.png" alt="titel">
-
-            <div id="verhaalcontent">
-                <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. Lachende Japanners passeren mij. Een van de Japanners verandert in een vrouw. ‘Waar is het postkantoor,’ vraagt de vrouw. ‘Dat bestaat niet meer,’ zeg ik. ‘We werken hier alleen nog maar met postduiven.’ </p>
-
-                <p>
-                    Een auto met een Frans nummerbord en op het dak een opblaasbare Smurf met een enorme penis rijdt achteruit. De vrouw rent er achteraan. De auto en de rennende vrouw worden kleiner en kleiner. Ik kijk voor me. Daar staat het postkantoor. Binnen word ik ontvangen door Raymond Queneau. Hij lijkt verdacht veel op Harry Mulisch. Dat zeg ik tegen ’m. Queneau neemt een trekje van zijn pijp. ‘Dat komt,’ zo zegt hij mij, ‘omdat ik onvindbaar ben.’ ‘Maar ik heb u toch gevonden,’ antwoord ik. ‘Niets is wat het lijkt,’ zegt Queneau. Hij kijkt mij doordringend aan. ‘Walk like an Egyptian,’ zingt hij, en doet het dansje. ‘Het gaat er niet om wat je zingt, maar hoe je erbij danst,’ zegt een medewerker van het probeer ik een paar schoenen voor mijn zoon te kopen, maar het zoeken wordt mij belet door duizenden betogers die denken dat mijn zoontje Mohammed El Baradei is. Ze nemen hem op de schouders, mijn zoontje lacht. Daar komen mannen op kamelen aan.
-                </p>
-
-            </div>
+    <div id="hetverhaal">
+    <!-- hier staat de achtergrond als gif als verhaal -->
 
 
-        </main>
+</div>
+
+
+<button class="on-af">Niet alles gelezen</button>
 
 
 
 
-
-
-
-        <section id="sectie1">
+        <section id="sectie2">
 
 
             <h1>Vergelijkbare verhalen</h1>
@@ -104,13 +92,13 @@
 
                     <div class="titelcard">
 
-                        <div class="plusbutton">
-                            <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                         <div class="plusbutton">
+                        <svg class="add" width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
+                    <path class="streep1" d="M63.5,98 L63.5,39.5" id="Line1" stroke-linecap="round" transform=""></path>
+                    <path class="streep2" d="M63.5,98 L63.5,39.5" id="Line2" stroke-linecap="round" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
                     <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
                     </g>
                      </g>
@@ -211,7 +199,11 @@
 
         </section>
 
-
+<aside>
+    <img src="./images/sluiten.png" alt="">
+    <p>Nog niet alles gelezen? druk op 'niet alles gelezen' en bekijk het later terug in je verhalenlijst!</p>
+    
+</aside>
 
 
 
