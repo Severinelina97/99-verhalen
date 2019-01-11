@@ -12,24 +12,15 @@ var wrapper = document.getElementById("wrapper");
 var wrapperChildren = wrapper.children;
 
 
-//variabelen voor plusbutton
-/*var notificatie = window.getComputedStyle(
-    document.getElementById('.pulse'), ':before')*/
 
+var plusbutton = document.querySelector(".add");
 
+plusbutton.addEventListener("click", toevoegen);
 
-window.onload=function(){
-    setTimeout(popUp, 8000);
-}
-
-function popUp (){
-    document.body.classList.add("popup");
-    
+function toevoegen (){
+    document.body.classList.toggle("toevoegen");
 
 }
-
-
-
 
 // hier worden alle buttons naar geluisterd een voor een gecontroleerd op classname
 for (var i = 0; i < filterbtn.length; i++) {
@@ -64,26 +55,59 @@ function executeClassCheck(event) {
 }
 
 
-//functie voor toevoegknop -van joost , voeg een class op de body toe is makkelijker
-//codepen van joost - collections filter geel met zwart
-var plusbutton = document.querySelector(".add");
 
-plusbutton.addEventListener("click", toevoegen);
+// functie voor informatie pop-up
+window.onload=function(){
+    setTimeout(popUp, 20000);
+}
 
-function toevoegen (){
-    document.body.classList.toggle("toevoegen");
+function popUp (){
+    document.body.classList.add("popup");
+
 
 }
 
-
+function sluitPopUp (){
+    document.body.classList.remove("popup");
+}
 
 var sluiten = document.querySelector("aside img");
 
-sluiten.addEventListener("click", sluiten);
+sluiten.addEventListener("click", sluitPopUp);
 
-function sluiten (){
-    document.body.classList.remove("popup");
+
+function openZoekveld (){
+    document.body.classList.toggle("activeer");
+
 }
+
+var searchSubmit = document.getElementById("search_submit");
+
+searchSubmit.addEventListener("click", openZoekveld);
+
+
+
+
+
+
+
+
+
+
+
+
+var onAf = document.querySelector(".on-af")
+
+onAf.addEventListener("click",veranderButton);
+
+function veranderButton (){
+    onAf.classList.toggle("geklikt");
+
+}
+
+
+
+
 
 
 
