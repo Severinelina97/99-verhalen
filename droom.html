@@ -1,264 +1,182 @@
 <!DOCTYPE html>
-
 <html lang="nl">
 
 <head>
-
-    <title>
-        U-Ov 99 verhalen
-    </title>
-
+    <title>U-Ov 99 verhalen</title>
     <meta charset="utf-8">
-
     <!-- hier staat mijn stylesheet gelinkt -->
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-
+    <!-- linkje voor sterren ration niet van mij though -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- deze meta tag zorgt ervoor dat m'n website responsive kan zijn -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
-
-
-<body>
-
-   <header>
-
+<body class="droompagina">
+    <header>
         <!-- dit is de bruine balk met het menu , het staat
             boven de body omdat ik met de vormgeving het niet goed kreeg als losse menubalk..-->
         <form action="search">
-            <input class="zoeken" type="text" placeholder="Zoek een verhaal.." value""> 
+            <input class="zoeken" type="text" placeholder="Zoek een verhaal..">
             <button type="button" id="search_submit"></button>
         </form>
-
-
-
         <!-- uov logo die je terugbrengt naar de homepage -->
-        <a href="index.html"> <img id="uovlogo" src="./images/uovlogo.png" alt="uovlogo"></a>
-
+        <a href="index.html">
+            <img id="uovlogo" src="./images/uovlogo.png" alt="uovlogo">
+        </a>
         <!-- profiel icoon waarbij je favorieten kunt bekijken -->
-        <a class="pulse" href="profiel.html"> <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon"> </a>
-
-
-
-
+        <a class="pulse" href="mijnaccount.html">
+            <img id="accounticoon" src="./images/accounticoon.png" alt="accounticoon">
+        </a>
     </header>
-
-
-
-
-
     <div id="top-verhaal">
-
-        <div id="intro">
+        <div id="intro2">
             <p>Uit 20 korte verhalen</p>
             <h1>Droom</h1>
             <h2>Molovich, januari 2019</h2>
         </div>
-
     </div>
-
     <div id="hetverhaal">
-    <!-- hier staat de achtergrond als gif als verhaal -->
-<!--
+        <!-- hier staat de achtergrond als gif als verhaal -->
+        <!--
  <img class="interactie letterO" src="./fonts/OO.png" alt="">
  <img class="interactie letterR" src=".fonts/R1.png" alt="">
  <img class="interactie letterR2" src="./fonts/R2.png" alt="">
  <img class="interactie letterDR" src="./fonts/DR.png" alt="">
  <img class="interactie letterM" src="./fonts/M2.png" alt="">-->
-</div>
-
-
-<button class="on-af">Niet alles gelezen</button>
-
-
-<h2>Beoordeel het verhaal</h2>
-
-<svg class="beoordelen" width="1266px" height="399px" viewBox="0 0 1266 399" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard@2x</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Star" fill="#797979" fill-rule="nonzero" points="189 275 103.183353 320.116481 119.572874 224.558241 50.1457486 156.883519 146.091677 142.941759 189 56 231.908323 142.941759 327.854251 156.883519 258.427126 224.558241 274.816647 320.116481"></polygon>
-        <polygon id="Star" fill="#797979" fill-rule="nonzero" points="488 275 402.183353 320.116481 418.572874 224.558241 349.145749 156.883519 445.091677 142.941759 488 56 530.908323 142.941759 626.854251 156.883519 557.427126 224.558241 573.816647 320.116481"></polygon>
-        <polygon id="Star" fill="#797979" fill-rule="nonzero" points="786 275 700.183353 320.116481 716.572874 224.558241 647.145749 156.883519 743.091677 142.941759 786 56 828.908323 142.941759 924.854251 156.883519 855.427126 224.558241 871.816647 320.116481"></polygon>
-        <polygon id="Star" fill="#797979" fill-rule="nonzero" points="1091.14575 275 1005.3291 320.116481 1021.71862 224.558241 952.291497 156.883519 1048.23743 142.941759 1091.14575 56 1134.05407 142.941759 1230 156.883519 1160.57287 224.558241 1176.9624 320.116481"></polygon>
-    </g>
-</svg>
-
-
-        <section id="sectie2">
-
-
-            <h1>Vergelijkbare verhalen</h1>
-
-
-            <div id="wrapper">
-
-
-                <!-- bij ieder article zet ik een classnaam en data item die overeenkomt met de data filter die ik later aanroep in javascript -->
-
-
-
-
-                <article class=" verhaal drukkeverhalen">
-
-
-                    <a href="droom.html"><img src="./images/Voetbalanalistenzwart6.jpg" alt="Voetbalanalisten"> </a>
-
-
-                    <div class="titelcard">
-
-                         <div class="plusbutton">
+    </div>
+    <button class="on-af">Later lezen</button>
+    <h2>Beoordeel het verhaal</h2>
+    <form id="beoordeel" action="#">
+        <fieldset>
+            <div id="sterbeoordeling">
+                <input type="radio" name="beoordeel" id="beoordeel1">
+                <label for="beoordeel1"></label>
+                <input type="radio" name="beoordeel" id="beoordeel2">
+                <label for="beoordeel2"></label>
+                <input type="radio" name="beoordeel" id="beoordeel3">
+                <label for="beoordeel3"></label>
+                <input type="radio" name="beoordeel" id="beoordeel4">
+                <label for="beoordeel4"></label>
+            </div>
+        </fieldset>
+    </form>
+    <section id="sectie2">
+        <h1>Vergelijkbare verhalen</h1>
+        <div id="wrapper">
+            <article class=" verhaal drukkeverhalen">
+                <a href="droom.html">
+                    <img src="./images/Voetbalanalistenzwart6.jpg" alt="Voetbalanalisten">
+                </a>
+                <div class="titelcard">
+                    <div class="plusbutton">
                         <svg class="add" width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
-                    <path class="streep1" d="M63.5,98 L63.5,39.5" id="Line1" stroke-linecap="round" transform=""></path>
-                    <path class="streep2" d="M63.5,98 L63.5,39.5" id="Line2" stroke-linecap="round" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
-                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
-                    </g>
-                     </g>
-                   </svg></div>
-
-                        <h3>Voetbalanalisten</h3>
-                        <p>280 woorden</p>
-                        <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
+                                    <path class="streep1" d="M63.5,98 L63.5,39.5" id="Line1" stroke-linecap="round" transform=""></path>
+                                    <path class="streep2" d="M63.5,98 L63.5,39.5" id="Line2" stroke-linecap="round" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
+                                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
-                </article>
-
-
-
-                <article class=" verhaal minimalistischeverhalen">
-
-
-                    <a href="droom.html"><img src="./images/essentie.jpg" alt="essentie"> </a>
-
-
-                    <div class="titelcard">
-
-                        <div class="plusbutton">
-                            <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
-                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
-                    </g>
-                     </g>
-                   </svg></div>
-
-                        <h3>Essentie</h3>
-                        <p>210 woorden</p>
-                        <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                    <h3>Voetbalanalisten</h3>
+                    <p>280 woorden</p>
+                    <img class="sterren" src="./images/driesterren.png" alt="sterren">
+                </div>
+            </article>
+            <article class=" verhaal minimalistischeverhalen">
+                <a href="droom.html">
+                    <img src="./images/essentie.jpg" alt="essentie">
+                </a>
+                <div class="titelcard">
+                    <div class="plusbutton">
+                        <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
+                                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
-                </article>
-
-
-
-                <article class=" verhaal minimalistischeverhalen">
-
-
-                    <a href="droom.html"><img src="./images/zombie.png" alt="zombie"> </a>
-
-
-                    <div class="titelcard">
-
-                        <div class="plusbutton">
-                            <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
-                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
-                    </g>
-                     </g>
-                   </svg></div>
-
-                        <h3>Zombie</h3>
-                        <p>162 woorden</p>
-                        <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                    <h3>Essentie</h3>
+                    <p>210 woorden</p>
+                    <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                </div>
+            </article>
+            <article class=" verhaal minimalistischeverhalen">
+                <a href="droom.html">
+                    <img src="./images/zombie.png" alt="zombie">
+                </a>
+                <div class="titelcard">
+                    <div class="plusbutton">
+                        <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
+                                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
-                </article>
-
-
-
-                <article class=" verhaal minimalistischeverhalen">
-
-
-                    <a href="droom.html"><img src="./images/haiku" alt="Haiku verhaal"> </a>
-
-
-                    <div class="titelcard">
-
-                        <div class="plusbutton">
-                            <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
-                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
-                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
-                    </g>
-                     </g>
-                   </svg></div>
-
-                        <h3>Haiku</h3>
-                        <p>14 woorden</p>
-                        <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                    <h3>Zombie</h3>
+                    <p>162 woorden</p>
+                    <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                </div>
+            </article>
+            <article class=" verhaal minimalistischeverhalen">
+                <a href="droom.html">
+                    <img src="./images/haiku" alt="Haiku verhaal">
+                </a>
+                <div class="titelcard">
+                    <div class="plusbutton">
+                        <svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Artboard" transform="translate(-7.000000, -12.000000)" fill-rule="nonzero" stroke="" stroke-width="6">
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square"></path>
+                                    <path d="M63.5,98 L63.5,39.5" id="Line" stroke-linecap="square" transform="translate(63.500000, 68.500000) rotate(-270.000000) translate(-63.500000, -68.500000) "></path>
+                                    <circle id="Oval" cx="63.5" cy="68.5" r="53.5"></circle>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
-                </article>
-
-
-
-
-        </section>
-
-<aside>
-    <img src="./images/sluiten.png" alt="">
-    <p>Nog niet alles gelezen? druk op 'niet alles gelezen' en bekijk het later terug in je verhalenlijst!</p>
-    
-</aside>
-
-
-
-
-
-        <footer>
-            <!-- hieronder staan het uov logo en de social media icoontjes /buttons-->
-            <a href="index.html"><img src="./images/uovlogo.png" alt="uovlogo"></a>
-
-
-            <a href="index.html"><img class="social" src="./images/facebookicoon.png" alt="social-facebook"> </a>
-
-
-            <a href="index.html"><img class="social" src="./images/twittericoon.png" alt="social-twitter"> </a>
-
-
-
-            <ul>
-                <!-- hieronder zitten nog wat linkjes die onderaan in de pagina staan -->
-                <li><a href="index.html">Voorwaarden</a></li>
-                <li><a href="index.html">Disclaimer en privacy</a></li>
-                <li><a href="index.html">Cookies</a></li>
-            </ul>
-
-            <p>99 verhalen website voor U-OV. Gemaakt door Severine Verhaar © Copyright 2018</p>
-
-        </footer>
-
-
-
-        <script src="index.js"></script>
-
+                    <h3>Haiku</h3>
+                    <p>14 woorden</p>
+                    <img class="sterren" src="./images/tweesterren.png" alt="sterren">
+                </div>
+            </article>
+        </div>
+    </section>
+    <aside>
+        <img src="./images/sluiten.png" alt="">
+        <p>Nog niet alles gelezen? druk op 'Later lezen' en bekijk het later terug in je verhalenlijst!</p>
+    </aside>
+    <footer>
+        <!-- hieronder staan het uov logo en de social media icoontjes /buttons-->
+        <a href="index.html">
+            <img src="./images/uovlogo.png" alt="uovlogo">
+        </a>
+        <a href="index.html">
+            <img class="social" src="./images/facebookicoon.png" alt="social-facebook">
+        </a>
+        <a href="index.html">
+            <img class="social" src="./images/twittericoon.png" alt="social-twitter">
+        </a>
+        <ul>
+            <!-- hieronder zitten nog wat linkjes die onderaan in de pagina staan -->
+            <li><a href="index.html">Voorwaarden</a>
+            </li>
+            <li><a href="index.html">Disclaimer en privacy</a>
+            </li>
+            <li><a href="index.html">Cookies</a>
+            </li>
+        </ul>
+        <p>99 verhalen website voor U-OV. Gemaakt door Severine Verhaar © Copyright 2018</p>
+    </footer>
+    <script src="./script/droom.js"></script>
 </body>
-
-
-
-
-
-
 
 </html>

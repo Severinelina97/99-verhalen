@@ -1,13 +1,9 @@
-//* ik heb met mediaquery verschillende padding waardes
-gegeven omdat het dan beter meeschaald op mobiel */ html {
+
+
+html {
     font-size: .8em;
     line-height: 1.15;
-
 }
-
-
-
-
 
 
 
@@ -25,21 +21,75 @@ gegeven omdat het dan beter meeschaald op mobiel */ html {
 
 
 
+
+/*dit is een div*/
+#intro-mijnlijst {
+    padding-top:3.125em;
+    text-align: center;
+}
+
+
+
+/*dit is een h2*/
+#laatstbekeken {
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+
+
+/*dit is een div*/
+#intro2 {
+    text-align: center;
+    margin-top: 2.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+/*dit is een div*/
+#intro2 p {
+    color: #E5711E;
+}
+
+
+
+/*dit is een div*/
+#intro2 h2 {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/*dit is een class op body*/
+.droompagina {
+    background-color: white;
+}
+
+
+
+/*dit is een div*/
 #hetverhaal {
-    height: 88em;
-    width:100%;
+    height:88em;
+    width:auto;
     margin: 0 auto;
-    background-color: #FCD900;
     background-image: url("../images/mobile-droom.gif");
     background-position: center center;
     background-size:contain;
     background-repeat:no-repeat;
     border: 2em;
-
-
-
 }
 
+
+
+/*
 .interactie {
     height: 15em;
     width: auto;
@@ -75,17 +125,15 @@ padding-top: 20em;
     padding-right: 7em;
     padding-top: 50em;
 }
+*/
 
 
 
-.on-af {
-    
+/*dit is is een button*/
+.on-af  {
     background-color: #7E7873;
-    position: absolute;
-    margin-bottom: 5em;
-    margin-left: 1em;
-    
- 
+    margin-right: 1.5em;
+    float: right;
     cursor: pointer;
     font-weight: bold;
     color: white;
@@ -95,20 +143,110 @@ padding-top: 20em;
     transition: ease-in .4s;
 }
 
+
+
+button+h2 {
+    margin-top: 5em;
+    padding-left: .8em;
+}
+
+
+
+/*dit is een div*/
+#sterbeoordeling {
+    transform: translate (-50%, -50%);
+    display:flex;
+}
+
+
+
+/*dit is een form*/
+#beoordeel {
+    padding-left: 1em;
+    margin-bottom:5em;
+}
+
+
+
+fieldset {
+    border-style:none;
+}
+
+
+
+/*dit is een div*/
+#sterbeoordeling input {
+    display:none;
+}
+
+
+
+/*dit is een div*/
+#sterbeoordeling label {
+    cursor:pointer;
+    display:block;
+    width: 3em;
+}
+
+
+
+/*dit is een div*/
+#sterbeoordeling label:after {
+    content: "\f005";
+    font-family:fontAwesome;
+    position:relative;
+    display:block;
+    font-size: 3em;
+    color: #E5711E;
+    top:0;
+    opacity: 0;
+
+    transition: .4s;
+}
+
+
+
+/*dit is een div*/
+#sterbeoordeling label:before {
+    content: "\f005";
+    font-family:fontAwesome;
+    position:absolute;
+    display:block;
+    font-size: 3em;
+    color: grey;
+    opacity:1;
+}
+
+
+
+/*dit zijn div's*/
+#sterbeoordeling label:hover:after,
+#sterbeoordeling input:checked ~ label:after {
+    opacity: 1;
+}
+
+
+
+/*dit is een class voor wanneer de button 'later lezen' aangeklikt is*/
 .geklikt  {
     padding: 11px 17px;
     background-color: #E5711E ;
 }
 
+
+
 h2 {
     padding-left: 1em;
     margin-top: 2em;
 }
-.beoordelen {
-    height: 4em;
-    width: auto;
-    padding-left: 1em;
+
+
+
+h2#laatstbekeken {
+    margin-top: 0;
 }
+
+
 
 body.popup aside {
     background-color: black;
@@ -118,39 +256,45 @@ body.popup aside {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;
-    padding-left:1em;
     padding-right: 1em;
     position: fixed;
     bottom: 0;
     position:center;
-
-
 }
+
+
 
 aside {
     width: 100%;
     bottom:0;
+    left:0;
     position: fixed;
     opacity:0;
-
     transition: ease-in-out .8s;
-
 }
 
+
+
 aside img {
-    padding-left: 80%;
-    padding-right:1em;
     cursor: pointer;
     height: 28px;
     width: auto;
 }
+
+
+
+aside p {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
 header {
-
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-
     background-color: #675C53;
     position: fixed;
     max-width: 100%;
@@ -162,19 +306,17 @@ header {
     left: 0;
     right: 0;
     z-index: 5;
-
-
-
-
 }
+
+
 
 header img {
     height: 29px;
-
-
-
 }
 
+
+
+/*dit is een div*/
 #top {
     background-color: white;
     border-radius: 10px;
@@ -182,23 +324,14 @@ header img {
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 3.5em;
-
-
 }
 
-#top-verhaal {
-
-    
-    margin-bottom: 3.5em;
-}
 
 
 header a:nth-of-type(2) {
     grid-column-start: 3;
     grid-column-end: 4;
-
-    justify-self: end;
-    
+    justify-self: end;  
 }
 
 
@@ -206,38 +339,27 @@ header a:nth-of-type(2) {
 header a:first-of-type {
     grid-column-start: 2;
     grid-column-end: 3;
-
-
-
     justify-self: center;
-
-
-
 }
-
 
 
 
 form {
     grid-column-start: 1;
     grid-column-end: 2;
-
     justify-self: start;
-
 }
 
+
+
 form input {
-    /*display:none;*/
     width: 80%;
 }
 
 
 
-
+/*dit is een button*/
 #search_submit {
-
-
-
     background-color: transparent;
     padding-left: 2em;
     height: 1.75em;
@@ -248,15 +370,15 @@ form input {
     transition: .6s ease-in;
     cursor: pointer;
     z-index: 6;
-
 }
 
+
+/*dit is een a*/
 .pulse {
     text-decoration: none;
-
-
-    
 }
+
+
 
 body.toevoegen .pulse:before {
     display: inline-block;
@@ -280,8 +402,8 @@ body.toevoegen .pulse:before {
 }
 
 
-/*niet mijn eigen code bron = https://codepen.io/olam/pen/zcqea */
 
+/*niet allemaal mijn eigen code. bron = https://codepen.io/olam/pen/zcqea */
 @-webkit-keyframes pulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
@@ -311,6 +433,7 @@ body.toevoegen .pulse:before {
 
 
 
+/*dit is een div*/
 #intro {
     text-align: center;
     margin-top: 5em;
@@ -318,14 +441,13 @@ body.toevoegen .pulse:before {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-
-
-
 }
 
+
+
+/*dit is een div*/
 #intro p {
     color: #E5711E;
-
 }
 
 
@@ -334,33 +456,19 @@ body {
     margin: 0 auto;
     font-family: Roboto, sans serif;
     padding-top: 1.25em;
-
-
-
-}
-
-
-h {
-    font-weight: bold;
-
-}
-
-
-
-
-
-
-
-body {
     background-color: #FCD900;
 }
 
 
 
+h {
+    font-weight: bold;
+}
 
+
+
+/*dit is het input gedeelde van de search-form*/
 .zoeken {
-
-
     font-weight: bold;
     display:none;
     border: none;
@@ -377,51 +485,71 @@ body {
     cursor: text;
     border-width:1.5px;
     border-bottom-style: solid ;
-
     border-bottom-color: #E5711E;
+
     transition: .4s
-
-
 }
 
 
-
+/*dit is voor wanneer je het search form opent*/
 body.activeer .zoeken {
-    display:inline-block;
-    
-    
-    
+    display:inline-block;    
 }
 
 
 
+nav {
+    background-color: #f7f4f1;
+    border-radius: 0 0 10px 10px;
+    padding-top:.1em;  
+}
 
 
 
+/*dit is een div*/
+#filtersorteer {
+    background-color:#f7f4f1 ;
+    border-radius: 0 0 10px 10px;
+}
 
+
+
+/*dit is een nav*/
+#tweedemenu {
+    padding-left:2em;
+    padding-right:2em;
+}
+
+
+
+/*dit is een nav*/
 #tweedemenu a {
-
     font-size: .625em;
     font-weight: bold;
     text-indent: none;
-    margin-bottom: 1em;
     text-align:center;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: grey;
     border-style: solid;
     border-color: grey;
     border-radius: 8px;
     padding: 9px 15px;
-
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
+    
     transition: ease-in-out .6s;
 }
 
+
+
+/*dit is een nav*/
 #tweedemenu a:hover {
     padding: 11px 18px;
 }
 
+
+
+/*dit is een nav*/
 #tweedemenu a:focus {
     color: #C05D00;
     padding: 11px 18px;
@@ -429,199 +557,217 @@ body.activeer .zoeken {
 }
 
 
+
+/*dit is een nav*/
 #tweedemenu li {
     padding-left: .5em;
     padding-right: .5em;
     display: inline;
     text-align: center;
-
-
 }
 
 
 
+/*dit is een nav*/
 #tweedemenu ul {
-
     list-style: none;
     padding-left: 0;
     text-align: center;
-
-
-
-
 }
 
 
 
+/*dit is een div*/
+#filtermenu {
+    padding-top:0;
+}
+
+
+
+/*dit is een div*/
 #filtermenu a {
-
-
     font-size: .625em;
     font-weight: bold;
     text-indent: none;
     margin-bottom: 1em;
-
     display: inline-block;
     text-decoration: none;
     color: white;
     background-color: #7E7873;
     border-radius: 8px;
     padding: 9px 15px;
-
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-
 }
 
 
 
+/*dit is een div*/
 #filtermenu li {
     display: inline;
     padding-right: .8em;
 }
 
+
+
+/*dit is een div*/
 #filtermenu ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 1em;
     text-align: center;
 }
 
-#filtermenu p {
-    padding-left: 1em;
+
+
+/*dit is een div*/
+#filtermenu h4 {
     text-align: center;
 }
 
 
 
 section {
-
     font-size: 1rem;
+    padding-top:.1em;
     padding-left: 1em;
     padding-right: 1em;
-
-
-
-
-
 }
 
 
 
 article {
-
-
     min-height: 15em;
     margin: 0 auto;
     width: 100%;
+    opacity: 1;
     margin-bottom: 24px;
     border-radius: 10px;
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
-
-
     display: grid;
-
-
     grid-template-columns: repeat (1fr, 2);
     grid-template-rows: 6.25em 3.125em;
 
-    
-
     transition: opacity ease-in .8s;
-
-
-
-
-
 }
 
 
 
-
+/*dit is een div*/
 .titelcard {
-
-
     background-color: white;
-
-
     box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
     border-radius: 8px;
-
-
-
-
-
-
     padding-left: 1em;
     padding-bottom: 10em;
-
     margin-bottom: 1.3em;
-
-
     width: 14em;
-
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: end;
     grid-row-start: 2;
     grid-row-end: 3;
-
-
 }
 
 
 
+/*dit is een div*/
 .plusbutton > svg {
-
-
     height: 3.5em;
     padding-top: 0.2em;
     width: auto;
     position: absolute;
     margin-left: 10.3em;
-
-
     margin-bottom: 10px;
 
     transition: ease-in-out .4s;
 }
 
+
+
+/*dit is een div*/
 .plusbutton > svg:hover {
     webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     height: 4em;
     width: auto;
     fill: transparent;
-
 }
 
+
+
+/*dit is een div*/
 .plusbutton > svg > g {
     stroke: #7D6D60;
 }
 
 
 
+/*dit is een div*/
+.minbutton > svg {
+    height: 3.5em;
+    padding-top: 0.2em;
+    width: auto;
+    position: absolute;
+    margin-left: 10.3em;
+    margin-bottom: 10px;
+
+    transition: ease-in-out .4s;
+}
+
+
+
+/*dit is een div*/
+.minbutton > svg:hover {
+    webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    height: 4em;
+    width: auto;
+    fill: transparent;
+}
+
+
+
+/*dit is een div*/
+.minbutton > svg > g {
+    stroke: #7D6D60;
+}
+
+
+
+body.verwijder article {
+    position:absolute;
+    opacity: 0;
+}
+
+
 
 /*button checked annimatie*/
-
 body.toevoegen svg.add g:nth-of-type(1) {
     stroke:green;
 }
+
+
 
 .streep1 {
     transition: ease-in .2s;
 }
 
+
+
 .streep2 {
     transition: ease-in .2s;
 }
 
-body.toevoegen svg.add .streep1 {
 
+
+body.toevoegen svg.add .streep1 {
     transform:
     scale(0.999)
     translate(63.5px, 68.5px) 
     rotate(-210deg) 
     translate(-41.5px, -63.5px)
 }
+
+
 
 body.toevoegen svg.add .streep2 {
     transform: 
@@ -633,21 +779,11 @@ body.toevoegen svg.add .streep2 {
 
 
 
-
-
-
-
-
+/*dit zijn de sterren binnen de titelcard als img*/
 .sterren {
-
-
     height: 30px;
     width: auto;
-
-
-
 }
-
 
 
 
@@ -655,53 +791,52 @@ article img {
     height: 15em;
     width: 100%;
     object-fit: cover;
-
     border-radius: 10px;
-
-
-
 }
 
-article a {
 
+
+article a {
     grid-column-start: 1;
     grid-column-end: 3;
-
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 
 
-
-
-
-
+/*dit is een div*/
 #sectie2 {
-
     background-color: white;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-
-}
-
-#sectie1 {
-
-    padding-top: 1.5em;
-    background-color: #D6CEC6;
-    padding-bottom: 1.5em;
-
-
-
-}
-
-.resultatenlink {
-    font-size: 2em;
-    text-align: center;
-    padding-right: 1em;
-    color: black;
     padding-bottom: 1em;
 }
+
+
+
+/*dit is een div*/
+#sectie1 {
+    background-color: #D6CEC6;
+    padding-bottom: 1em;
+}
+
+
+
+/*dit is een section*/
+#mijnlijst {
+    padding-bottom:1em;
+    background-color:white;
+}
+
+
+
+/*dit is een section*/
+#laatst {
+    padding-top:1em;
+    padding-bottom:1em;
+    background-color:#D6CEC6 ;
+}
+
+
 
 footer {
     background-color: #675C53;
@@ -712,50 +847,85 @@ footer {
     color: white;
 }
 
+
+
 footer img {
     height: 1.75em;
-
-
 }
+
+
 
 footer a:nth-of-type(4) {
     padding-top: 2em;
 }
 
 
+
 footer a {
     display: block;
     text-decoration: none;
     color: white;
-
-
-
 }
+
+
 
 footer ul {
     padding-left: 0;
 }
 
+
+
 footer li {
     list-style: none;
-
-
 }
+
+
 
 footer li a {
     padding-bottom: 1.25em;
     text-indent: 0;
-
 }
+
+
 
 footer .social {
     float: right;
     padding-left: 1em;
 }
 
+
+
 footer p {
     font-size : .8em;
 }
+
+
+
+
+
+
+/*hieronder staan alle mediaqueries voor breakpoints*/
+
+
+/*minor breakpoint */
+@media only screen and (min-width: 500px){
+ 
+
+/*dit is een nav*/
+#tweedemenu a {
+    display:inline-block;
+}
+
+
+/*dit is een nav*/
+#tweedemenu a {
+    margin-bottom:1em;
+}
+
+
+}
+
+
 
 /* minor break point*/
 @media only screen and (min-width: 690px) {
@@ -768,211 +938,296 @@ footer p {
     background-position: center center;
     background-size:contain;
     background-repeat:no-repeat;
-
 }
 
 
 
-/*tablet formaat schermbreedte */
-
+/*tablet formaat schermbreedte 760px */
 @media only screen and (min-width:760px) {
 
+header {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
 
 
-    header {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
+/*dit is de later-lezen button*/
+.on-af{
+    margin-right: 2em;
+}
 
+
+
+button+h2 {
+
+    padding-left: 1.2em;}
 
 
     
-
-    #top {
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 1em;
-    }
-
-    #wrapper {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        grid-gap: 1em;
-
-
-
-
-    }
-
-    section {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-
-
-    }
-
-
-
-    /*#sectie1 h1{
-	padding-top:1.875em;
-	
+/*dit is een div*/
+#top {
+    margin-left:1.5em;
+    margin-right:1.5em;
+    margin-bottom: 3.5em;
 }
-#sectie1 {
-	padding-bottom:1.875em;
+
+
+
+/*dit is een div*/
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
 }
-#sectie2 {
-	padding-bottom:1.875em;
+
+
+
+article {
+    max-width: 580px;
 }
-#sectie2 h1 {
-	padding-top: 1.875em;
-} */
-    footer {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
+
+
+
+section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+
+footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
 
 
 
 }
 
-/*desktop scherm */
+
+
+/*desktop scherm scherm breedte 980px */
 @media only screen and (min-width:980px) {
 
-    html {
-        font-size: 1em;
-    }
-    header {
-
-        padding-left: 9.375em;
-        padding-right: 9.375em;
-    }
+html {
+    font-size: 1em;
+}
 
 
+
+header {
+    padding-left: 9.375em;
+    padding-right: 9.375em;
+}
+
+
+
+/*dit is een div*/
 #hetverhaal {
     height: 46em;
     width:100%;
     margin: 0 auto;
-
-    
-    background-image: url("../images/desktop-droom.gif");
-    
+    background-image: url("../images/desktop-droom.gif"); 
     background-position: center center;
     background-size:contain;
     background-repeat:no-repeat;
-
-
-
-
 }
 
 
 
-   #top {
+button+h2 {
+    padding-left: 8.375em;
+}
+
+
+
+/*dit is een form*/
+#beoordeel {
+    padding-left: 8.375em;
+}
+
+
+
+/*dit is een div*/
+#top {
     text-align: left;
-
-   }
-
-    #tweedemenu {
-        
-        text-align: left;
-
-    }
-
-    #tweedemenu ul {
-        text-align: left;
-        padding-left: 1em;
-
-    }
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    max-width: 860px;
+}
 
 
-#filtermenu ul {
+/*dit is een div*/
+#intro-mijnlijst h1 {
+    text-align: left;
+    padding-left: 4.8em;
+}
+
+
+/*dit is een h2*/
+#laatstbekeken {
     text-align:left;
+    padding-left: 0;
+}
+
+
+/*dit is een nav*/
+#tweedemenu {
+    text-align: left;
+}
+
+
+/*dit is een nav*/
+#tweedemenu ul {
+    text-align: left;
+}
+
+
+/*dit is een nav*/
+#tweedemenu li:first-of-type {
+    padding-left: 0;
+}
+
+
+/*dit is een div*/
+#filtermenu {
     padding-left: 2em;
 }
 
+
+/*dit is een div*/
+#filtermenu ul {
+    text-align:left;
+    padding-left:0; 
+}
+
+
+/*dit is een div*/
+#filtermenu h4 {
+    text-align: left;
+}
+
+
+
+nav ul li:first-of-type{
+    padding-left:0;
+}
+
+
+
+/*dit is een div*/
 #intro {
     text-align:left;
     padding-left: 2em;
+    padding-right: 2em;
 }
 
 
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 3em;
-        grid-template-rows: auto;
-    }
-
-    header a:nth-of-type(2) {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        justify-self: end;
-        grid-row:1 / 2;
-
-
-    }
+/*dit is een div*/
+#intro h2 {
+    padding-left: 0;
+}
 
 
 
-    header a:first-of-type {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        justify-self: start;
-        grid-row:1 / 2;
-
-    }
-
-    header form {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row:1 / 2;
-        justify-self: end;
-
-    }
-
-    section {
-        padding-left: 9.375em;
-        padding-right: 9.375em;
-
-        padding-bottom: 1.875em;
-
-
-    }
-
-    #wrapper {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        grid-gap: 1em;
+/*dit is een div*/
+#intro p {
+    width: 60%;
+}
 
 
 
-
-    }
-
-
-
-    article {
-        margin-bottom: 3.125em;
+/*dit is een div*/
+#intro2 {
+    padding-left: 9.375em;
+    text-align:left;
+}
 
 
 
+button+h2 {
+    padding-left: 6.375em;
+}
 
 
 
+h2+svg {
+    height: 4em;
+    width: auto;
+    padding-left: 8.9em;
+}
 
 
-    }
+/*dit is een button*/
+.on-af{
+    margin-right: 13.45em;
+}
 
-    footer {
-        padding-left: 9.375em;
-        padding-right: 9.375em;
-    }
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3em;
+    grid-template-rows: auto;
+}
+
+
+
+header a:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
+    grid-row:1 / 2;
+}
+
+
+
+header a:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+    grid-row:1 / 2;
+}
+
+
+
+header form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row:1 / 2;
+    justify-self: end;
+}
+
+
+
+section {
+    padding-left: 9.375em;
+    padding-right: 9.375em; 
+    padding-bottom: 1.875em;
+}
+
+
+
+/*dit is een div*/
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+
+
+article {
+    margin-bottom: 3.125em;
+}
+
+
+
+footer {
+    padding-left: 9.375em;
+    padding-right: 9.375em;
+}
 
 
 
