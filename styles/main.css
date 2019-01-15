@@ -74,6 +74,7 @@ html {
 
 /*dit is een div*/
 #interactiefverhaal {
+    background-image: url("../images/achtergrond-mobiel.svg");
     display:grid;
     grid-gap: 0;
     grid-template-rows: auto;
@@ -278,20 +279,6 @@ html {
 /*dit is een class op body*/
 .droompagina {
     background-color: white;
-}
-
-
-
-/*dit is een div*/
-#hetverhaal {
-    height:88em;
-    width:auto;
-    margin: 0 auto;
-    background-image: url("../images/mobile-droom.gif");
-    background-position: center center;
-    background-size:contain;
-    background-repeat:no-repeat;
-    border: 2em;
 }
 
 
