@@ -506,22 +506,17 @@ header a:first-of-type {
 
 
 form {
+    display:inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     justify-self: start;
 }
 
 
-
-form input {
-    width: 80%;
-}
-
-
-
 /*dit is een button*/
 #search_submit {
     background-color: transparent;
+    display:inline-block;
     padding-left: 2em;
     height: 1.75em;
     background-image: url("../images/searchicoon.png");
@@ -631,30 +626,41 @@ h {
 /*dit is het input gedeelde van de search-form*/
 .zoeken {
     font-weight: bold;
-    display:none;
+    display:inline;
+    opacity:0;
+    position:absolute;
+    margin-left: -999px;
     border: none;
     outline: none;
     color: white;
     padding: 3px;
-    padding-right: 60px;
     top: .8em;
     background-color: transparent;
-    width:70%;
     z-index: 1;
     cursor: pointer;
-    width: 70%;
     cursor: text;
     border-width:1.5px;
     border-bottom-style: solid ;
-    border-bottom-color: #E5711E;
+    border-bottom-color: white;
 
-    transition: .4s
+    transition: .8s
 }
 
 
 /*dit is voor wanneer je het search form opent*/
 body.activeer .zoeken {
-    display:inline-block;    
+    padding-left: 4em;
+    margin:0;
+    opacity:1;  
+    position:static;  
+}
+
+body.activeer .zoeken:focus {
+   border-bottom-color: #E5711E;
+}
+
+body.activeer header a:first-of-type{
+    display:none;
 }
 
 
@@ -1240,7 +1246,9 @@ header {
     margin-right: 2em;
 }
 
-
+body.activeer header a:first-of-type{
+    display:block;
+}
 
 button+h2 {
 
