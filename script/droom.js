@@ -58,12 +58,15 @@ sluiten.addEventListener("click", sluitPopUp);
 
 // voor button "nog niet alles gelezen"
 
+var accounticoon = document.getElementById("accounticoon");
+
 var onAf = document.querySelector(".on-af")
 
 onAf.addEventListener("click",veranderButton);
 
 function veranderButton (){
     onAf.classList.toggle("geklikt");
+    accounticoon.classList.toggle("teruglezen");
 
 }
 

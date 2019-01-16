@@ -37,7 +37,7 @@ sluiten.addEventListener("click", sluitPopUp);
 
 // het verwijderen van een verhaal
 
-var minbutton = document.querySelector(".remove");
+var minbutton = document.querySelector(".weg");
 
 
 function verwijderen (){

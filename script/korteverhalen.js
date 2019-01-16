@@ -52,9 +52,11 @@ function executeClassCheck(event) {
         var iets = wrapperChildren[i].classList.item(1)
 
         if (wrapperChildren[i].classList.item(1) !== btnClass) {
-            wrapperChildren[i].style.display = "none";
+            wrapperChildren[i].classList.toggle("show")
+            //wrapperChildren[i].style.display = "none";
         } else {
-            wrapperChildren[i].style.display = "";
+            wrapperChildren[i].classList.remove("show")
+            //wrapperChildren[i].style.display = "";
         }
 
         // bij deze functie word gekeken of de class matcht van de button met de verhalen
