@@ -235,7 +235,11 @@ html {
 }
 
 
-
+#intro p {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
 
 /*dit is een div*/
 #intro-mijnlijst {
