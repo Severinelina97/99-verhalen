@@ -1440,6 +1440,7 @@ nav ul li:first-of-type{
 
 /*dit is een div*/
 #intro p {
+    margin-left: 0;
     width: 60%;
 }
 
